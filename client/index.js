@@ -6,8 +6,5 @@ import { Provider } from 'react-redux';
 import routes from './routes';
 
 render (
-
-        <Router history={browserHistory} routes={routes}/>
-    ,
-    document.getElementById('app')
+        <Router history={browserHistory} routes={routes}/> , document.getElementById('app')
 )
