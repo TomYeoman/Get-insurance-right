@@ -1,0 +1,21 @@
+/* Navbar */
+.navbar-nav{
+  float:none;
+}
+
+.navbar-nav > li {
+  width: 20%;
+}
+
+.navbar-default .navbar-nav>li>a {
+  text-align:center;
+  background-color: #404040;
+  padding-bottom: 17px;
+  color: #fff;
+}
+
+/* Bootstrap */
+.row-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

@@ -2,9 +2,15 @@
 import HeaderSmall from '../../common/HeaderSmall';
 import HeaderLarge from '../../common/HeaderLarge';
 import LightHeader from '../../common/LightHeader';
+import QuoteForm from './QuoteForm';
 
 import React from 'react'
 
+let styles = {
+  image: {
+    maxWidth: "100%"
+  }
+}
 let Home = React.createClass({
   componentDidMount: function() {
     let menuItems = document.querySelectorAll("#main-menu li");
@@ -18,14 +24,18 @@ let Home = React.createClass({
 
   render () {
     return (
-        <div>
-            <HeaderSmall
-                text = "You've landed on home!"
-            />
-          <p>
-            Click on some tabs to move about
-          </p>
+      <div>
+
+      <div className="col-xs-7">
+          <img style={styles.image} src="images/happy_family_playing.jpg"></img>
         </div>
+
+        <div className="text-center col-xs-5">
+          <QuoteForm/>
+        </div>
+
+      </div>
+
     )
   }
 });

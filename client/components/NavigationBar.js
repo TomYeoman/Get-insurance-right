@@ -12,26 +12,25 @@ export default () => {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-                    <Link to="/" className="navbar-brand" href="#">Project name</Link>
                 </div>
 
                 <div id="main-menu" className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
-                        <li id="HomeMenuItem"><Link to="/Home" href="#">Home</Link></li>
-                        <li id="AboutMenuItem"><Link to="/About" href="#">About</Link></li>
-                        <li id="ContactMenuItem"><Link to="/Contact" href="#">Contact</Link></li>
-                        <li className="dropdown">
-                            <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span className="caret"></span></a>
-                            <ul className="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" className="divider"></li>
-                                <li className="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
+                      <li id="AboutMenuItem"><Link to="/Home" href="#">Home</Link></li>
+                      <li className="dropdown">
+                          <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span className="caret"></span></a>
+                          <ul className="dropdown-menu">
+                              <li><Link to="/Home" href="#">Life Insurance</Link></li>
+                              <li><Link to="/About" href="#">Critical Illness</Link></li>
+                              <li><Link to="/About" href="#">Over 50's insurance</Link></li>
+                              <li><Link to="/About" href="#">Buildings and contents</Link></li>
+                              <li><Link to="/About" href="#">Landlord Insurance</Link></li>
+                          </ul>
+                      </li>
+                      <li id="AboutMenuItem"><Link to="/About" href="#">Why get insurance right?</Link></li>
+                      <li id="ContactMenuItem"><Link to="/Contact" href="#">About us</Link></li>
+                      <li id="ContactMenuItem"><Link to="/Contact" href="#">Our happy customers</Link></li>
+
                     </ul>
                 </div>
             </div>
