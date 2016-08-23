@@ -8,7 +8,6 @@ let styles = {
       color: '#fff',
       padding: '5px',
       paddingLeft: '20px',
-      marginTop: '15px',
       marginBottom: '15px',
   },
   header: {

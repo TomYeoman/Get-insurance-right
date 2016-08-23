@@ -14,7 +14,7 @@ export default () => {
                     </button>
                 </div>
 
-                <div id="main-menu" className="navbar-collapse collapse">
+                <div id="main-menu" className="navbar-collapse collapse row-no-padding">
                     <ul className="nav navbar-nav">
                       <li id="AboutMenuItem"><Link to="/Home" href="#">Home</Link></li>
                       <li className="dropdown">
