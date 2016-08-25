@@ -4,7 +4,8 @@ import HeaderLarge from '../../common/HeaderLarge';
 import LightHeader from '../../common/LightHeader';
 import ExampleForm from '../../common/ExampleForm';
 
-import React from 'react'
+import React, { Component } from 'react';
+
 
 let styles = {
   bodyContainer : {
@@ -15,14 +16,28 @@ let styles = {
     paddingBottom: "15px"
   }
 }
-let QuoteForm = React.createClass({
-  componentDidMount: function() {
+
+export default class QuoteForm extends Component {
+
+  constructor(props) {
+     super(props);
+   }
+
+  componentDidMount() {
     let menuItems = document.querySelectorAll("#main-menu li");
     for (var i = 0; i < menuItems.length; i++) {
       menuItems[i].classList.remove("active");
     }
     document.getElementById("ContactMenuItem").classList.add("active");
-  },
+  }
+
+  _submitForm(e) {
+    // In Autoplay the focus stays on clicked button even after transition
+    // to next slide. That only goes away by click somewhere outside
+    e.preventDefault();
+    alert("HELLO");
+  }
+
   render () {
     return (
         <div style={styles.bodyContainer} className="pcolor1">
@@ -283,13 +298,13 @@ let QuoteForm = React.createClass({
             <input type="text" className="form-control"/>
           </div>
           <div class="col-xs-12"></div>
-          <input type="button" className="btn btn-primary text-center" value="Submit"></input>
+          <input onClick={this._submitForm.bind(this)} type="button" className="btn btn-primary text-center" value="Submit"></input>
         </div>
 
-        
+
       </div>
     )
   }
-});
+};
 
 export default QuoteForm;
