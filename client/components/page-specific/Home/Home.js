@@ -1,18 +1,18 @@
 
+// Common
 import HeaderSmall from '../../common/HeaderSmall';
 import HeaderLarge from '../../common/HeaderLarge';
 import LightHeader from '../../common/LightHeader';
 import TextQuote from '../../common/TextQuote';
-import QuoteForm from './QuoteForm';
 import ShadowContainer from '../../common/ShadowContainer';
 
+// Page specific
+import QuoteForm from './QuoteForm';
+import CoverTile from './CoverTile';
+
+// React
 import React from 'react'
 
-let styles = {
-  image: {
-    maxWidth: "100%"
-  }
-}
 let Home = React.createClass({
   componentDidMount: function() {
     let menuItems = document.querySelectorAll("#main-menu li");
@@ -28,22 +28,64 @@ let Home = React.createClass({
     return (
       <div>
 
-        <div className="col-xs-7">
+        <div className="col-xs-12 col-sm-6 col-md-7">
           <img style={styles.image} src="images/happy_family_playing.jpg"></img>
           <TextQuote text='"The service they provided was both professional and friendly. Having got my life insurance through Get Insurance Right, I am very pleased that I went through them. I would recommend this site to anyone looking for cheap cover."'/>
         </div>
 
-        <div className="text-center col-xs-5">
+        <div className="text-center col-xs-12 col-sm-6 col-md-5">
           <QuoteForm/>
         </div>
 
-        <div className="col-xs-12">
+        <div className="ptop col-xs-12">
 
-          <div className="col-xs-3">
+          <div className="col-xs-6 col-sm-4">
             <ShadowContainer>
-              <TextQuote text='"TEEEEST"'/>
+              <CoverTile
+                title="Life Insurance"
+                imgsrc="images/caucasian_family.png"
+              />
             </ShadowContainer>
-
+          </div>
+          <div className="col-xs-6 col-sm-4">
+            <ShadowContainer>
+              <CoverTile
+                title="Critical Illness"
+                imgsrc="images/doctor_scope_.png"
+              />
+            </ShadowContainer>
+          </div>
+          <div className="col-xs-6 col-sm-4">
+            <ShadowContainer>
+              <CoverTile
+                title="Over 50's Insurance"
+                imgsrc="images/6744289-happy-elderly-seniors-couple-in-love-isolated-over-white-background.jpg"
+              />
+            </ShadowContainer>
+          </div>
+          <div className="col-xs-6 col-sm-4">
+            <ShadowContainer>
+              <CoverTile
+                title="Income Protection"
+                imgsrc="images/money.png"
+              />
+            </ShadowContainer>
+          </div>
+          <div className="col-xs-6 col-sm-4">
+            <ShadowContainer>
+              <CoverTile
+                title="Buildings & Contents"
+                imgsrc="images/house.jpg"
+              />
+            </ShadowContainer>
+          </div>
+          <div className="col-xs-6 col-sm-4">
+            <ShadowContainer>
+              <CoverTile
+                title="Landlord Insurance"
+                imgsrc="images/buy_fix_hold.png"
+              />
+            </ShadowContainer>
           </div>
 
         </div>
@@ -52,5 +94,11 @@ let Home = React.createClass({
     )
   }
 });
+
+let styles = {
+  image: {
+    maxWidth: "100%"
+  }
+}
 
 export default Home;

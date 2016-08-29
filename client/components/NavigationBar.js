@@ -4,7 +4,7 @@ import {Link} from 'react-router'
 export default () => {
     return (
         <nav className="navbar navbar-default">
-            <div className="container-fluid">
+            <div className="no-padding container-fluid">
                 <div className="navbar-header">
                     <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span className="sr-only">Toggle navigation</span>
