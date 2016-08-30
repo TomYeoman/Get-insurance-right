@@ -198,5 +198,3 @@ let styles = {
     paddingBottom: "15px"
   }
 }
-
-export default QuoteForm;

@@ -38,5 +38,3 @@ let styles = {
     width: "100%"
   }
 }
-
-export default CoverTile;
