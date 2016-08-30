@@ -28,18 +28,20 @@ let Home = React.createClass({
     return (
       <div>
 
-        <div className="col-xs-12 col-sm-6 col-md-7">
+        <div className="home-image-container col-xs-12 col-sm-6 col-md-7">
           <img style={styles.image} src="images/happy_family_playing.jpg"></img>
-          <TextQuote text='"The service they provided was both professional and friendly. Having got my life insurance through Get Insurance Right, I am very pleased that I went through them. I would recommend this site to anyone looking for cheap cover."'/>
+          <div className="home-page-quote">
+            <TextQuote text='"The service they provided was both professional and friendly. Having got my life insurance through Get Insurance Right, I am very pleased that I went through them. I would recommend this site to anyone looking for cheap cover."'/>
+          </div>
         </div>
 
         <div className="text-center col-xs-12 col-sm-6 col-md-5">
           <QuoteForm/>
         </div>
 
-        <div className="ptop col-xs-12">
+        <div className="cover-tile-container ptop col-xs-12">
 
-          <div className="col-xs-6 col-sm-4">
+          <div className="col-xs-12 col-sm-4">
             <ShadowContainer>
               <CoverTile
                 title="Life Insurance"
@@ -47,7 +49,7 @@ let Home = React.createClass({
               />
             </ShadowContainer>
           </div>
-          <div className="col-xs-6 col-sm-4">
+          <div className="col-xs-12 col-sm-4">
             <ShadowContainer>
               <CoverTile
                 title="Critical Illness"
@@ -55,7 +57,7 @@ let Home = React.createClass({
               />
             </ShadowContainer>
           </div>
-          <div className="col-xs-6 col-sm-4">
+          <div className="col-xs-12 col-sm-4">
             <ShadowContainer>
               <CoverTile
                 title="Over 50's Insurance"
@@ -63,7 +65,7 @@ let Home = React.createClass({
               />
             </ShadowContainer>
           </div>
-          <div className="col-xs-6 col-sm-4">
+          <div className="col-xs-12 col-sm-4">
             <ShadowContainer>
               <CoverTile
                 title="Income Protection"
@@ -71,7 +73,7 @@ let Home = React.createClass({
               />
             </ShadowContainer>
           </div>
-          <div className="col-xs-6 col-sm-4">
+          <div className="col-xs-12 col-sm-4">
             <ShadowContainer>
               <CoverTile
                 title="Buildings & Contents"
@@ -79,7 +81,7 @@ let Home = React.createClass({
               />
             </ShadowContainer>
           </div>
-          <div className="col-xs-6 col-sm-4">
+          <div className="col-xs-12 col-sm-4">
             <ShadowContainer>
               <CoverTile
                 title="Landlord Insurance"
@@ -98,6 +100,9 @@ let Home = React.createClass({
 let styles = {
   image: {
     maxWidth: "100%"
+  },
+  textQuote : {
+    marginTop:"15px"
   }
 }
 

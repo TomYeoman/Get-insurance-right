@@ -7,16 +7,6 @@ import React, { Component } from 'react';
 import calendar_options from '../../data/calendar_options';
 
 
-let styles = {
-  bodyContainer : {
-
-  },
-  inputContainer: {
-    paddingTop: "15px",
-    paddingBottom: "15px"
-  }
-}
-
 export default class QuoteForm extends Component {
 
   constructor(props) {
@@ -186,8 +176,11 @@ export default class QuoteForm extends Component {
           <div className="col-xs-8">
             <input type="text" className="form-control"/>
           </div>
-          <div className="col-xs-12"></div>
-          <input onClick={this._submitForm.bind(this)} type="button" className="btn btn-primary text-center" value="Submit"></input>
+          <br/>
+          <div style={styles.buttonContainer} className="col-xs-offset-3 col-xs-6">
+            <input onClick={this._submitForm.bind(this)} type="button" className="btn btn-primary text-center form-control" value="Submit"></input>
+
+          </div>
         </div>
 
 
@@ -195,5 +188,15 @@ export default class QuoteForm extends Component {
     )
   }
 };
+
+let styles = {
+  buttonContainer : {
+    marginTop: "15px"
+  },
+  inputContainer: {
+    paddingTop: "10px",
+    paddingBottom: "15px"
+  }
+}
 
 export default QuoteForm;

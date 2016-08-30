@@ -3,17 +3,38 @@
   float:none;
 }
 
-.navbar-nav > li {
-  width: 20%;
+.navbar .navbar-default {
+  border: 0px transparent;
 }
-
 .navbar-default .navbar-nav>li>a {
   text-align:center;
   background-color: #404040;
-  padding-bottom: 17px;
   color: #fff;
 }
 
+.dropdown-menu li{
+    width:100%;
+}
+.dropdown-menu li a {
+  text-align:center;
+  background-color: #404040;
+  color: #fff;
+
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #565a5c;
+}
+
+.container-fluid{
+  padding: 0px;
+}
+
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
 /* Bootstrap */
 .row-no-padding {
     padding-left: 0 !important;
@@ -31,13 +52,30 @@
   background-color: rgb(89, 159, 68);
 }
 
+/* Home image container */
+.home-image-container img{
+  width:100%
+}
+
+/* Quote container /*/
+.home-page-quote{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Cover tiles */
+.cover-tile-container > div {
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
 /*==================================================
 =                      Header                     =
 ==================================================*/
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+/* Extra Small Devices, Phones  ( 0 - 768 px ) */
+@media only screen and (min-width : 0px) {
   .header-container{
     height:400px;
   }
@@ -51,6 +89,9 @@
   .quote-container {
     margin-top:45px;
   }
+  .navbar-nav > li {
+    width: 100%;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -62,9 +103,12 @@
     height:200px;
   }
   .logo-container img{
-    height:100%;
     width:100%;
   }
+  .navbar-nav > li {
+    width: 20%;
+  }
+
 }
 
 /* Medium Devices, Desktops */
@@ -72,6 +116,10 @@
   .header-container{
     height:200px;
   }
+  .navbar-nav > li {
+    width: 20%;
+  }
+
 }
 
 /* Large Devices, Wide Screens */
@@ -79,4 +127,8 @@
   .header-container{
     height:200px;
   }
+  .navbar-nav > li {
+    width: 20%;
+  }
+
 }
