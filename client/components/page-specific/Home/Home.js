@@ -29,7 +29,7 @@ let Home = React.createClass({
       <div>
 
         <div className="home-image-container col-xs-12 col-sm-6 col-md-7">
-          <img style={styles.image} src="images/happy_family_playing.jpg"></img>
+          <div className="fixed-bg"></div>
           <div className="home-page-quote">
             <TextQuote text='"The service they provided was both professional and friendly. Having got my life insurance through Get Insurance Right, I am very pleased that I went through them. I would recommend this site to anyone looking for cheap cover."'/>
           </div>
