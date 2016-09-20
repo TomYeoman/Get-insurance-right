@@ -5,6 +5,7 @@ import HeaderLarge from '../../common/HeaderLarge';
 import LightHeader from '../../common/LightHeader';
 import TextQuote from '../../common/TextQuote';
 import ShadowContainer from '../../common/ShadowContainer';
+import Slider from 'react-slick';
 
 // Page specific
 import QuoteForm from './QuoteForm';
@@ -12,6 +13,14 @@ import CoverTile from './CoverTile';
 
 // React
 import React from 'react'
+
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
 
 let Home = React.createClass({
   componentDidMount: function() {
@@ -28,8 +37,20 @@ let Home = React.createClass({
     return (
       <div>
 
+
+        <Slider {...settings}>
+          <div><img style={styles.img} src='/images/wpp_dash.png' /></div>
+          <div><img style={styles.img} src='/images/2.png' /></div>
+          <div><img style={styles.img} src='images/3.png' /></div>
+          <div><img style={styles.img} src='images/4.png' /></div>
+          <div><img style={styles.img} src='images/5.png' /></div>
+          <div><img style={styles.img} src='images/6.png' /></div>
+
+        </Slider>
+
+
         <div className="home-image-container col-xs-12 col-sm-6 col-md-7">
-          <div className="fixed-bg"></div>
+          
           <div className="home-page-quote">
             <TextQuote text='"The service they provided was both professional and friendly. Having got my life insurance through Get Insurance Right, I am very pleased that I went through them. I would recommend this site to anyone looking for cheap cover."'/>
           </div>

@@ -12,8 +12,9 @@ export default class App extends Component {
        if (width > 768) {
          return (
            <div className="container">
-             <NavigationBar />
              <SiteHeader />
+               <NavigationBar />
+
              {this.props.children}
            </div>
          );

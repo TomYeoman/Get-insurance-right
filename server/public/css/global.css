@@ -1,3 +1,16 @@
+/* Fix the slider color */
+
+.slick-prev:before, .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: #34454E;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 /* Navbar */
 .navbar-nav{
   float:none;
@@ -20,6 +33,10 @@
   background-color: #404040;
   color: #fff;
 
+}
+
+#main-menu li {
+  border: 1px solid #fff
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
