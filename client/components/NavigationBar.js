@@ -3,7 +3,7 @@ import {Link} from 'react-router'
 
 export default () => {
     return (
-      <nav className="navbar navbar-default">
+      <nav className="navbar navbar-default navbar-right">
           <div className="container-fluid">
             <div className="navbar-header">
               <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -15,9 +15,9 @@ export default () => {
             </div>
             <div id="navbar" className="navbar-collapse collapse" aria-expanded="false">
               <ul id="main-menu" className="nav navbar-nav">
-                <li id="HomeMenuItem"><Link to="/Home" href="#">Home</Link></li>
+                <li id="HomeMenuItem"><Link to="/Home" href="#">HOME</Link></li>
                 <li className="dropdown">
-                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span className="caret"></span></a>
+                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS <span className="caret"></span></a>
                     <ul className="dropdown-menu">
                         <li><Link to="/Home" href="#">Life Insurance</Link></li>
                         <li><Link to="/About" href="#">Critical Illness</Link></li>
@@ -26,9 +26,8 @@ export default () => {
                         <li><Link to="/About" href="#">Landlord Insurance</Link></li>
                     </ul>
                 </li>
-                <li id="AboutMenuItem"><Link to="/About" href="#">Why get insurance right?</Link></li>
-                <li id="ContactMenuItem"><Link to="/Contact" href="#">About us</Link></li>
-                <li id="ContactMenuItem"><Link to="/Contact" href="#">Out happy customers</Link></li>
+                <li id="AboutMenuItem"><Link to="/About" href="#">ABOUT US</Link></li>
+                <li id="ContactMenuItem"><Link to="/Contact" href="#">WHY CHOOSE SIMPLY?</Link></li>
 
               </ul>
             </div>

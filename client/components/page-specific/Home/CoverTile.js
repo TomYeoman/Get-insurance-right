@@ -20,8 +20,8 @@ export default class CoverTile extends Component  {
   			<div>
 
         <div className="col-xs-8">
-          <h3>{this.props.title}</h3>
-          <input onClick={this._getQuoteClick.bind(this)} type="button" className="btn btn-primary text-center" value="Submit"></input>
+          <h3 style={styles.headings}>{this.props.title}</h3>
+          <input onClick={this._getQuoteClick.bind(this)} type="button" className="btn btn-primary text-center" value="GET QUOTE"></input>
         </div>
 
         <div className="row-no-padding col-xs-4">
@@ -36,5 +36,8 @@ export default class CoverTile extends Component  {
 let styles = {
   image: {
     width: "100%"
+  },
+  headings: {
+    color: "#fff"
   }
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import map from 'lodash/map'
 import classnames from 'classnames'
-import timezone from '../data/timezones'
 
 class ExampleForm extends React.Component {
 
@@ -35,9 +34,6 @@ class ExampleForm extends React.Component {
 
     render() {
 
-      let options = map(timezone, (val, key) =>
-          <option key={val} value={val}>{key}</option>
-      )
 
         return (
 
@@ -98,7 +94,7 @@ class ExampleForm extends React.Component {
                             className="form-control"
                         >
                         <option> Initial Option </option>
-                        {options}
+                        
                     </select>
                 </div>
 

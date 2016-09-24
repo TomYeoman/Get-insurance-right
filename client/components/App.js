@@ -11,9 +11,13 @@ export default class App extends Component {
        let width = window.innerWidth;
        if (width > 768) {
          return (
-           <div className="container">
-             <SiteHeader />
+           <div className="header-main-container">
+             <div className="col-xs-offset-2 col-xs-2">
+               <SiteHeader />
+             </div>
+             <div className="col-xs-6">
                <NavigationBar />
+             </div>
 
              {this.props.children}
            </div>

@@ -9,7 +9,7 @@ import Contact from './components/page-specific/Contact/Contact';
 export default (
   <Route path='/' component={App}>
 
-    <IndexRoute component={Home} /> // If no path defined load the full design pattern list
+    <IndexRoute component={Home} /> // If no path defined load home
 
     <Route path="/Home" component={Home} />
     <Route path="/About" component={About} />
