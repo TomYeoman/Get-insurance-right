@@ -1,5 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
+var combineLoaders = require('webpack-combine-loaders');
 
 export default {
 
@@ -17,17 +18,30 @@ export default {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        include: path.join(__dirname, 'client'),
-        loaders: ['react-hot','babel']
-      }
-    ]
+    loaders: [{
+      test: /\.js$/,
+      loaders: ['react-hot', 'babel'],
+      include: path.join(__dirname, 'client')
+    }, {
+      test: /\.css$/,
+      loader: combineLoaders([
+        {
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader',
+          query: {
+            modules: true,
+            localIdentName: '[name]__[local]___[hash:base64:5]'
+          }
+        }
+      ])
+    }]
   },
 
+
   resolve: {
-    extentions: [ '', '.js', '.jsx']
+    extentions: [ '', '.js', '.jsx'],
+    modulesDirectories: ['node_modules', 'components']
   }
 
 }
