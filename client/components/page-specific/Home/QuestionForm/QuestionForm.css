@@ -1,0 +1,99 @@
+.bodyContainer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  composes: TahitiGold from "../../../css/colours.css";
+}
+
+.bubbleContainer{
+  padding-top:50px;
+  padding:40px;
+  composes: TahitiGold from "../../../css/colours.css";
+}
+
+/*.bubble
+{
+  position: relative;
+  height: auto;
+  padding: 30px;
+  composes: YellowSea from "../../../css/colours.css";
+  composes: CatskillWhite-text from "../../../css/colours.css";
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 25px;
+}
+
+.bubble:after
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 22px 0;
+  border-color: #ffae00 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 36px;
+}*/
+
+.bubble
+{
+position: relative;
+height:  auto;
+padding: 0px;
+background: #ffae00;
+padding: 30px;
+composes: YellowSea from "../../../css/colours.css";
+composes: CatskillWhite-text from "../../../css/colours.css";
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 25px;
+border: #fff solid 3px;
+}
+
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 26px 11px 0;
+border-color: #ffae00 transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -26px;
+left: 53px;
+}
+
+.bubble:before
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 28px 13px 0;
+border-color: #fff transparent;
+display: block;
+width: 0;
+z-index: 0;
+bottom: -31px;
+left: 51px;
+}
+
+.formInput{
+  composes: inputs from "../../../css/input_styles.css";
+  margin-top:15px;
+}
+.formTextarea{
+  composes: inputs from "../../../css/input_styles.css";
+  margin-top:15px;
+}
+
+.reccomendedContact{
+  margin-top:15px;
+  composes: inputs from "../../../css/input_styles.css";
+  composes: Facebook from "../../../css/colours.css";
+}
+
+.containerPadding{
+  composes: Facebook from "../../../css/colours.css";
+}

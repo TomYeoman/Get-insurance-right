@@ -19,7 +19,8 @@ let styles = {
     "borderColor": "#000000",
     "backgroundColor": "RGB(52,69,77)",
     "paddingBottom": "10px",
-    height: "150px"
+    height: "150px",
+    "margin-top": "25px"
   }
 }
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavigationBar from './NavigationBar';
 import SiteHeader from './SiteHeader';
+import Footer from './Footer';
 
 export default class App extends Component {
 
@@ -18,8 +19,8 @@ export default class App extends Component {
              <div className="col-xs-6">
                <NavigationBar />
              </div>
-
              {this.props.children}
+             <Footer />
            </div>
          );
        } else {
@@ -28,6 +29,7 @@ export default class App extends Component {
              <NavigationBar />
              <SiteHeader />
              {this.props.children}
+             <Footer />
            </div>
          );
        }

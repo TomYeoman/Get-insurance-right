@@ -1,0 +1,17 @@
+.homeTextHR {
+  border-bottom: 5px solid RGB(131,169,192);
+}
+
+.homeWelcomeTextContainer {
+  background-color: #f8f8e0;
+}
+
+.homeWelcomeh2 {
+  font-weight: bold;
+}
+
+.coverTileContainer{
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
