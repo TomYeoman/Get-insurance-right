@@ -7,13 +7,13 @@ import About from './components/page-specific/About/About';
 import Contact from './components/page-specific/Contact/Contact';
 
 export default (
-  <Route path='/' component={App}>
 
-    <IndexRoute component={Home} /> // If no path defined load home
-
+  <Route component={App}>
+    <Route path="/" component={Home} />
     <Route path="/Home" component={Home} />
     <Route path="/About" component={About} />
     <Route path="/Contact" component={Contact} />
-
+    <Route path="*" component={Home} / >
   </Route>
+
 )

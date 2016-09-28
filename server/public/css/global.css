@@ -108,6 +108,11 @@
 
 /* HOME */
 
+/* Jumbotron */
+
+.jumbobtron{
+  font-family: 'Lalezar', cursive;
+}
 
 /* Quote container /*/
 .home-page-quote{
