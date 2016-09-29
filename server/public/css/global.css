@@ -128,9 +128,18 @@
 
 /* Cover main iamge */
 .header-main-container{
-  background : url('../images/jumboimg2.jpg');
-  background-size: 100% 100%;
+
   height:1300px;
+  /* The image used */
+background-image: url("../images/jumboimg2.jpg");
+
+/* Set a specific height */
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover
 }
 /* Bootstrap overrides */
 
@@ -200,4 +209,24 @@
     width: auto;
   }
 
+}
+
+
+.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.docked-header{
+  background-color: #fff;
+  -webkit-transition:background-color 1s;
+  -moz-transition:background-color 1s;
+  transition:background-color 1s;
+}
+.undocked-header{
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition:background-color 1s;
+  -moz-transition:background-color 1s;
+  transition:background-color 1s;
 }
