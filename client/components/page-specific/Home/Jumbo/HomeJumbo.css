@@ -1,5 +1,5 @@
 
-.jumboImage {
+.jumboContainer {
   background : transparent;
   height:500px;
   position: relative;
@@ -7,11 +7,16 @@
 
 .jumboHeader {
   color: #e5860f!important;
-  font-size: 50px;
+  font-size: 3em!important;
 }
 
-.jumboPhoneNumber {
+.subHeading{
+  font-size: 1em!important;
+}
+
+.phoneNumber {
   font-weight: bold;
+  font-size: 1.5em!important;
 }
 
 .jumboIcons {
@@ -24,4 +29,30 @@
   color: #34454f;
   font-size: 40px;
   margin-left: 20px;
+  display:inline;
+}
+
+
+@media (max-width: 600px) {
+  .jumboHeader {
+    color: #e5860f!important;
+    font-size: 1.2em!important;
+  }
+  .subHeading{
+    font-size: 1em!important;
+  }
+  .phoneNumber {
+    font-weight: bold;
+    font-size: 1.5em!important;
+    margin-bottom: 20px;
+  }
+  .textContainer{
+    margin-bottom:25px;
+  }
+  .jumboContainer {
+    background : rgba(255,255,255,0.6);
+    height:250px;
+    position: relative;
+  }
+
 }

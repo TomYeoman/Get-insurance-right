@@ -36,7 +36,37 @@
     <div id="app"></div>
     <script src="bundle.js"></script>
 
-    <h1
+    <script>
+    $(document).ready(function() {
+        // Cache selectors for faster performance.
+        var $window = $(window),
+            $mainMenuBar = $('.sticky-header'),
+            $mainMenuBarAnchor = $('#mainMenuBarAnchor');
+        console.log($mainMenuBar);
+        console.log($mainMenuBarAnchor);
+        // Run this on scroll events.
+        $window.scroll(function() {
+            var window_top = $window.scrollTop();
+            var div_top = $mainMenuBarAnchor.offset().top;
+            if (window_top > div_top) {
+                // Make the div sticky.
+                $mainMenuBar.addClass('stick');
+                $mainMenuBar.addClass('docked-header');
+                $mainMenuBar.removeClass('undocked-header');
+                $mainMenuBarAnchor.height($mainMenuBar.height());
+            }
+            else {
+                // Unstick the div.
+                $mainMenuBar.removeClass('stick');
+                $mainMenuBar.removeClass('docked-header');
+                $mainMenuBar.addClass('undocked-header');
+
+                $mainMenuBarAnchor.height(0);
+            }
+        });
+    });
+    </script>
+
   </body>
 
 </html>

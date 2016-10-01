@@ -13,19 +13,28 @@ export default class App extends Component {
        if (width > 768) {
          return (
            <div className="header-main-container">
-             <div className="col-xs-offset-2 col-xs-2">
-               <SiteHeader />
+             <div id="mainMenuBarAnchor"></div>
+
+             <div className="row-no-padding">
+               <div className="col-xs-12 sticky-header">
+                 <div className="col-xs-offset-2 col-xs-2">
+                   <SiteHeader />
+                 </div>
+                 <div className="col-xs-6">
+                   <NavigationBar />
+                 </div>
+               </div>
              </div>
-             <div className="col-xs-6">
-               <NavigationBar />
-             </div>
+
              {this.props.children}
+
              <Footer />
+
            </div>
          );
        } else {
          return (
-           <div className="container">
+           <div className="header-main-container">
              <NavigationBar />
              <SiteHeader />
              {this.props.children}

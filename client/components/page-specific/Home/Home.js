@@ -22,16 +22,37 @@ export default class Home extends React.Component {
     }
 
     document.getElementById("HomeMenuItem").classList.add("active");
+
+    window.addEventListener('resize', () => this.forceUpdate())
+
   }
 
   render () {
-    return (
-      <div className={`col-xs-12 row-no-padding`}>
-        <HomeJumbotron/>
-        <Information/>
-        <HomeTiles />
-        <QuestionForm />
-      </div>
-    )
+
+    let width = window.innerWidth;
+    console.log("resizing");
+    if (width > 768) {
+      return (
+        <div className="row-no-padding">
+          <div className={`col-xs-12`}>
+            <HomeJumbotron/>
+            <Information/>
+            <HomeTiles />
+            <QuestionForm />
+          </div>
+        </div>
+
+      )
+    } else {
+      return (
+        <div className="row-no-padding">
+          <div className={`col-xs-12`}>
+            <HomeJumbotron/>
+            <HomeTiles />
+            <QuestionForm />
+          </div>
+        </div>
+      )
+    }
   }
 }

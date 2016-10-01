@@ -18,15 +18,18 @@ export default class CoverTile extends Component  {
   render () {
     return (
   			<div>
+          <div className="row-no-padding">
+            <div className="col-xs-8">
+              <h3 style={styles.headings}>{this.props.title}</h3>
+              <input onClick={this._getQuoteClick.bind(this)} type="button" className="btn btn-primary text-center" value="GET QUOTE"></input>
+            </div>
+          </div>
 
-        <div className="col-xs-8">
-          <h3 style={styles.headings}>{this.props.title}</h3>
-          <input onClick={this._getQuoteClick.bind(this)} type="button" className="btn btn-primary text-center" value="GET QUOTE"></input>
-        </div>
-
-        <div className="row-no-padding col-xs-4">
-          <img style={styles.image} src={this.props.imgsrc}></img>
-        </div>
+          <div className="row-no-padding">
+            <div className="col-xs-4">
+              <img style={styles.image} src={this.props.imgsrc}></img>
+            </div>
+          </div>
 
         </div>
     )
