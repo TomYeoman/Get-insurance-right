@@ -16,11 +16,11 @@ export default class App extends Component {
              <div id="mainMenuBarAnchor"></div>
 
              <div className="row-no-padding">
-               <div className="col-xs-12 sticky-header">
-                 <div className="col-xs-offset-2 col-xs-2">
+               <div className="container sticky-header">
+                 <div className="col-xs-3">
                    <SiteHeader />
                  </div>
-                 <div className="col-xs-6">
+                 <div className="col-xs-9">
                    <NavigationBar />
                  </div>
                </div>
@@ -35,8 +35,13 @@ export default class App extends Component {
        } else {
          return (
            <div className="header-main-container">
-             <NavigationBar />
-             <SiteHeader />
+              <div className="col-xs-6">
+                <SiteHeader />
+              </div>
+              <div className="col-xs-6">
+                <NavigationBar />
+              </div>
+
              {this.props.children}
              <Footer />
            </div>

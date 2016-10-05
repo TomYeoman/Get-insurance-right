@@ -162,39 +162,11 @@ background-size: cover
 ==================================================*/
 
 
-/* Extra Small Devices, Phones  ( 0 - 768 px ) */
-@media only screen and (min-width : 0px) {
-  .logo-container{
-    height:150px;
-  }
-  .logo-container img{
-    height:100%;
-    width:100%;
-  }
-  .quote-container {
-    margin-top:45px;
-  }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
-  .logo-container{
-    height:100px;
-  }
-  .logo-container img{
-    width:auto;
-  }
-  .navbar-nav > li {
-    width: 100%;
-  }
-
-}
-
 .stick {
     position: fixed;
     top: 0;
     z-index: 10;
+    width: 100%;
 }
 
 .docked-header{
@@ -208,4 +180,59 @@ background-size: cover
   -webkit-transition:background-color 1s;
   -moz-transition:background-color 1s;
   transition:background-color 1s;
+}
+
+
+
+
+.footerMenuTop {
+    margin-top: 25px;
+}
+.footerMenuTop ul,
+.footerMenuBottom ul
+{
+    padding-left: 0px;
+}
+.footerMenuTop li{
+  display:inline!important;
+  color: #fff!important;
+  padding: 10px;
+  border-right: 1px solid #a0c5d9;
+  margin-bottom: 10px;
+
+}
+.footerMenuTop li a{
+  display:inline-block!important;
+  color: #fff!important;
+  padding-bottom: 30px;
+  font-size: 0.9em;
+
+}
+.footerMenuTop .fa{
+  color: #fff!important;
+  font-size: 70px;
+}
+
+.footerMenuTop{
+
+}
+.footerMenuBottom li{
+  display:inline!important;
+  color: #fff!important;
+  padding: 10px;
+  border-right: 1px solid #a0c5d9;
+  margin-bottom: 10px;
+
+}
+.footerMenuBottom li a{
+  display:inline-block!important;
+  color: #fff!important;
+  padding-bottom: 30px;
+  font-size: 0.7em;
+
+}
+
+.main-container{
+  padding-bottom: 50px;
+  padding-top: 50px;
 }

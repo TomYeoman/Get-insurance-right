@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Information.css';
 
-export default class App extends React.Component {
+export default class Information extends React.Component {
   constructor() {
     super();
   }

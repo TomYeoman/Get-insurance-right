@@ -4,10 +4,14 @@ import QuoteForm from './QuoteForm';
 import HomeJumbotron from './Jumbo/HomeJumbo';
 import Information from './Information/Information';
 import HomeTiles from './HomeTiles/HomeTiles';
+import Companies from './Companies/Companies';
 import QuestionForm from './QuestionForm/QuestionForm';
 
 // React
 import React from 'react'
+
+// styles
+import Logos from '../../css/logos.css'
 
 export default class Home extends React.Component {
   constructor() {
@@ -38,6 +42,7 @@ export default class Home extends React.Component {
             <HomeJumbotron/>
             <Information/>
             <HomeTiles />
+            <Companies />
             <QuestionForm />
           </div>
         </div>

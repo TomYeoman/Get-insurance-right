@@ -1,7 +1,27 @@
 .sectionTop {
   background-color: #34454f;
+  min-height:150px;
+  height: auto;
+}
+
+.footerMenu{
+  display:inline!important;
+  color: #fff!important;
 }
 
 .sectionBottom{
   background-color: #5d6a72;
+  min-height:125px;
+  color: #fff;
+  padding: 15px;
+}
+
+.facebook{
+}
+
+.twitter{
+  padding-left: 30px;
+}
+.linkedin{
+  padding-left: 30px;
 }
