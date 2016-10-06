@@ -35,10 +35,10 @@ export default class App extends Component {
        } else {
          return (
            <div className="header-main-container">
-              <div className="col-xs-6">
+              <div className="col-xs-12">
                 <SiteHeader />
               </div>
-              <div className="col-xs-6">
+              <div className="col-xs-12">
                 <NavigationBar />
               </div>
 

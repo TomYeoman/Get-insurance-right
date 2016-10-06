@@ -18,10 +18,9 @@ let styles = {
     "boxShadow": "6px 6px 8px rgba(127, 127, 127, 0.5)",
     "borderColor": "#000000",
     "backgroundColor": "RGB(52,69,77)",
-    "paddingBottom": "10px",
-    height: "150px",
-    "margin-top": "25px"
-  }
+    "height": "150px",
+    "marginBottom": "10px"
+    }
 }
 
 export default ShadowContainer;

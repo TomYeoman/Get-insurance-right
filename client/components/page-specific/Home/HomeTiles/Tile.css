@@ -1,0 +1,16 @@
+.tileContainer {
+  height:200px;
+}
+
+
+@media (max-width: 768px) {
+  .coverTileContainer {
+    background-color: transparent;
+    padding-top: 0px;
+  }
+
+  .coverTileContainer {
+    background-color: transparent;
+    padding: 0px;
+  }
+}
