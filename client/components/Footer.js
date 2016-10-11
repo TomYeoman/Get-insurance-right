@@ -16,7 +16,7 @@ export default class Footer extends React.Component {
         <div className="row-no-padding">
           <div className="col-xs-12">
             <div className={`${Footer_.sectionTop}`}>
-               <div className="row-no-padding footerMenuTop container text-center">
+               <div className="row-no-padding footerMenuTop container">
 
                  <div className={`hidden-xs col-sm-3`}>
 
@@ -26,7 +26,7 @@ export default class Footer extends React.Component {
 
                  </div>
                   <div className="row-no-padding">
-                     <ul className={`col-xs-12 col-sm-9`}>
+                     <ul className={`col-xs-12 col-sm-9 text-center`}>
                        <li className="col-xs-3 col-sm-3"><Link to="/Home" href="#">HOME</Link></li>
                        <li className="col-xs-3 col-sm-3"><Link to="/Home" href="#">LIFE INSURANCE</Link></li>
                        <li className="col-xs-3 col-sm-3"><Link to="/Home" href="#">WHY CHOOSE SIMPLY</Link></li>

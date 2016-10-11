@@ -2,7 +2,7 @@
 import Shadow from '../../css/shadow.css'
 import Logos from '../../css/logos.css'
 import CompanyLogosSmall from '../../common/CompanyLogos/CompanyLogosSmall'
-import _About from './About.css'
+import styles from './About.css'
 // React
 import React from 'react'
 
@@ -26,31 +26,24 @@ export default class Home extends React.Component {
       <div className={`col-xs-12 row-no-padding`}>
         <div className="container main-container">
 
-          <div className="col-xs-12 col-sm-3">
-            <h4>Personal Service</h4>
-              <p>We have carefully selected specialist partners to bring you excellent independent advice and competitive quotations on Protection Insurance from the UK's leading insurers.
-              Instead of pushy sales people, we offer a more personal service that provides a thorough market perspective and allows you to make an informed choice.</p>
-          </div>
+          <div className="col-xs-12 col-sm-12">
+            <h3>Getting the RIGHT life insurance means getting the RIGHT advice</h3>
 
-          <div className={`row-no-padding col-xs-12 col-sm-9`}>
-            <div className={`${Shadow.containerShadow} col-xs-12`}>
-              <h3 className="col-xs-12">Are you looking for...</h3>
-              <div className="col-xs-12 col-sm-9">
-                  <h4>Critical Illness Cover</h4>
-                  <p>This provides a one-off tax free lump sum payment in the event of a serious illness like cancer or permanent disability caused by injury. </p>
-              </div>
-              <div className="col-xs-12 col-sm-3">
-                <input type="button" className="btn btn-primary text-center" value="GET QUOTE"/>
-              </div>
-              <div className="col-xs-12 col-sm-9">
-                  <h4>Life and Income Protection Insurance</h4>
-                  <p>This provides monthly tax-free payments in the event that you cannot work due to long-term sickness or disability, and a lump-sum payment in the event of death.  </p>
-              </div>
-              <div className="col-sm-3">
-                <input type="button" className="btn btn-primary text-center" value="GET QUOTE"/>
-              </div>
-            </div>
-          </div>
+              <p>It's amazing how many people buy life insurance without getting professional advice, only to find that the policy has insufficient cover. So before you buy life insurance speak to us, we won't just get you an affordable life insurance policy, we'll get you the RIGHT policy.</p>
+
+              <h5>Our advisors can help you decide;</h5>
+
+              <h6><i className={`${styles.facheck} fa fa-check`} aria-hidden="true"></i> How long your term life assurance policy needs to be</h6>
+
+              <h6><i className={`${styles.facheck} fa fa-check`} aria-hidden="true"></i> How much life cover you need</h6>
+
+              <h6><i className={`${styles.facheck} fa fa-check`} aria-hidden="true"></i> What type of life assurance is best for your needs</h6>
+
+              <h6><i className={`${styles.facheck} fa fa-check`} aria-hidden="true"></i> And once we've found you low cost life insurance, we'll even complete the paperwork!</h6>
+
+              <p>When buying insurance it is essential to find the RIGHT insurer based on your health, hobbies and lifestyle as this will have a major effect on the final premium you will pay. We are passionate in finding you the RIGHT insurer with the very best cover for your individual circumstances, whilst making sure we secure you the most competitive rates in the marketplace today.</p>
+        </div>
+
 
           <CompanyLogosSmall />
         </div>
