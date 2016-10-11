@@ -6,6 +6,8 @@ import Information from './Information/Information';
 import HomeTiles from './HomeTiles/HomeTiles';
 import Companies from './Companies/Companies';
 import QuestionForm from './QuestionForm/QuestionForm';
+import CompanyLogosLarge from '../../common/CompanyLogos/CompanyLogosLarge'
+import CompanyLogosSmall from '../../common/CompanyLogos/CompanyLogosSmall'
 
 // React
 import React from 'react'
@@ -42,7 +44,7 @@ export default class Home extends React.Component {
             <HomeJumbotron/>
             <Information/>
             <HomeTiles />
-            <Companies />
+            <CompanyLogosLarge />
             <QuestionForm />
           </div>
         </div>
@@ -54,6 +56,7 @@ export default class Home extends React.Component {
           <div className={`col-xs-12`}>
             <HomeJumbotron/>
             <HomeTiles />
+            <CompanyLogosSmall />
             <QuestionForm />
           </div>
         </div>

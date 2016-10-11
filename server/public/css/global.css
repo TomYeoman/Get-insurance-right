@@ -123,18 +123,6 @@
   font-family: 'Lalezar', cursive;
 }
 
-/* Quote container /*/
-.home-page-quote{
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-/* Cover tiles */
-.cover-tile-container > div {
-  margin-top:15px;
-  margin-bottom:15px;
-}
-
 /* Cover main iamge */
 .header-main-container{
 
@@ -184,14 +172,20 @@ background-size: cover
     position: fixed;
     top: 0;
     z-index: 10;
-  width:100%;
+    width: 100%;
+
+    -webkit-transition:width 1s;
+    -moz-transition:width 1s;
+    transition:width 1s;
 }
 
 .docked-header{
+  width: 100%;
   background-color: #fff;
   -webkit-transition:background-color 1s;
   -moz-transition:background-color 1s;
   transition:background-color 1s;
+
 }
 .undocked-header{
   background-color: rgba(0, 0, 0, 0);
@@ -200,11 +194,10 @@ background-size: cover
   transition:background-color 1s;
 }
 
-
-
+/* FOOTER */
 
 .footerMenuTop {
-    margin-top: 25px;
+    padding-top: 25px;
 }
 .footerMenuTop ul,
 .footerMenuBottom ul

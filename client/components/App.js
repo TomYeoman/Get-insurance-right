@@ -16,13 +16,16 @@ export default class App extends Component {
              <div id="mainMenuBarAnchor"></div>
 
              <div className="row-no-padding">
-               <div className="container sticky-header">
-                 <div className="col-xs-3">
-                   <SiteHeader />
+               <div className="sticky-header">
+                 <div className="container">
+                   <div className="col-xs-3">
+                     <SiteHeader />
+                   </div>
+                   <div className="col-xs-9">
+                     <NavigationBar />
+                   </div>
                  </div>
-                 <div className="col-xs-9">
-                   <NavigationBar />
-                 </div>
+
                </div>
              </div>
 

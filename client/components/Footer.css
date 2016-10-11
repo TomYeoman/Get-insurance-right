@@ -1,6 +1,5 @@
 .sectionTop {
   background-color: #34454f;
-  min-height:150px;
   height: auto;
 }
 
@@ -11,9 +10,9 @@
 
 .sectionBottom{
   background-color: #5d6a72;
-  min-height:125px;
   color: #fff;
   padding: 15px;
+      height: auto;
 }
 
 .facebook{
