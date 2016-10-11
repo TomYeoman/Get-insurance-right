@@ -72,9 +72,9 @@ export default class QuoteForm extends Component {
           <div className={`${styles.bodyContainer} col-xs-12`}>
             <div className={`col-xs-12 clearfix ${styles.bubbleContainer}`}>
 
-              <div className={`${styles.bubble} col-xs-12 col-sm-8 col-sm-offset-2`}>
+              <div className={`${styles.bubble} row-no-padding col-xs-12 col-sm-8 col-sm-offset-2`}>
                 <h1>I have a question?</h1>
-                <div className="row-no-padding col-xs-12 col-sm-6">
+                <div className="col-xs-12 col-sm-6">
                     <input type="text" placeholder = "Name" className={`${styles.formInput} form-control`}/>
                     <input type="text" placeholder = "Email" className={`${styles.formInput} form-control`}/>
                     <div className={`${styles.reccomendedContact}`}>

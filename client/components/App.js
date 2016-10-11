@@ -10,7 +10,7 @@ export default class App extends Component {
   }
   render() {
        let width = window.innerWidth;
-       if (width > 768) {
+       if (width >= 768) {
          return (
            <div className="header-main-container">
              <div id="mainMenuBarAnchor"></div>

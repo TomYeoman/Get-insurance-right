@@ -194,7 +194,10 @@ background-size: cover
   transition:background-color 1s;
 }
 
-/* FOOTER */
+
+/*==================================================
+=                      Footer                     =
+==================================================*/
 
 .footerMenuTop {
     padding-top: 25px;
@@ -210,12 +213,11 @@ background-size: cover
   padding: 10px;
   border-right: 1px solid #a0c5d9;
   margin-bottom: 10px;
-
 }
+
 .footerMenuTop li a{
   display:inline-block!important;
   color: #fff!important;
-  padding-bottom: 30px;
   font-size: 0.9em;
 
 }
@@ -233,13 +235,39 @@ background-size: cover
   padding: 10px;
   border-right: 1px solid #a0c5d9;
   margin-bottom: 10px;
-
 }
+
 .footerMenuBottom li a{
   display:inline-block!important;
   color: #fff!important;
   font-size: 0.7em;
 
+}
+
+@media (max-width: 768px) {
+  .container{
+    padding: 0px;
+  }
+  .footerMenuTop li{
+    margin-bottom: 0px;
+  }
+  .footerMenuTop ul{
+    margin-bottom: 0px;
+  }
+  .footerMenuTop li a{
+    font-size: 0.7em;
+  }
+  .footerMenuBottom li a{
+    font-size: 0.6em;
+  }
+  .footerMenuBottom li{
+    display:block!important;
+    color: #fff!important;
+    padding: 0px;
+    border-right: 1px solid transparent;
+    margin-bottom: 5px;
+    text-align: center;
+  }
 }
 
 .main-container{

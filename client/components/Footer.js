@@ -40,11 +40,12 @@ export default class Footer extends React.Component {
             <div className={`${Footer_.sectionBottom}`}>
               <div className={`footerMenuBottom`}>
                 <div className="footerMenu container">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada vitae leo et tempor. In dui augue, eleifend a euismod at, ultricies non metus. Donec posuere ac ipsum sed maximus. Etiam volutpat orci eget posuere placerat. Fusce tristique odio nec augue tempor, in gravida sapien vestibulum. Donec a dui eget magna semper blandit. Donec luctus velit ex, ut suscipit nulla iaculis vitae. </p>
+                  <p className="hidden-xs"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada vitae leo et tempor. In dui augue, eleifend a euismod at, ultricies non metus. Donec posuere ac ipsum sed maximus. Etiam volutpat orci eget posuere placerat. Fusce tristique odio nec augue tempor, in gravida sapien vestibulum. Donec a dui eget magna semper blandit. Donec luctus velit ex, ut suscipit nulla iaculis vitae. </p>
 
                   <ul className={``}>
                     <li><Link to="/Home" href="#">TERMS AND CONDITIONS</Link></li>
-                    <li><Link to="/Home" href="#">PRIVACY POLICY AND COOKIES</Link></li>
+                    <li><Link to="/Home" href="#">PRIVACY POLICY</Link></li>
+                    <li><Link to="/Home" href="#">COOKIES</Link></li>
                     <li><Link to="/Home" href="#">COMPLAINTS POLICY</Link></li>
                   </ul>
                 </div>
