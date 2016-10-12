@@ -2,7 +2,7 @@
 import Shadow from '../../css/shadow.css'
 import Logos from '../../css/logos.css'
 import CompanyLogosSmall from '../../common/CompanyLogos/CompanyLogosSmall'
-import _About from './About.css'
+import _About from './LifeInsurance.css'
 // React
 import React from 'react'
 
@@ -18,7 +18,7 @@ export default class Home extends React.Component {
       menuItems[i].classList.remove("active");
     }
 
-    document.getElementById("AboutMenuItem").classList.add("active");
+    document.getElementById("ProductsMenuItem").classList.add("active");
   }
 
   render () {

@@ -12,7 +12,9 @@ export default class App extends Component {
        let width = window.innerWidth;
        if (width >= 768) {
          return (
-           <div className="header-main-container">
+          <div className="header-main-container">
+           <div className="content">
+
              <div id="mainMenuBarAnchor"></div>
 
              <div className="row-no-padding">
@@ -30,10 +32,11 @@ export default class App extends Component {
              </div>
 
              {this.props.children}
-
-             <Footer />
-
            </div>
+
+           <Footer />
+
+          </div>
          );
        } else {
          return (

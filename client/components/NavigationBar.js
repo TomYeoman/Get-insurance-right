@@ -17,10 +17,10 @@ export default () => {
             <div id="navbar" className="navbar-collapse collapse" aria-expanded="false">
               <ul id="main-menu" className="nav navbar-nav">
                 <li id="HomeMenuItem"><Link to="/Home" href="#">HOME</Link></li>
-                <li className="dropdown">
+                <li id="ProductsMenuItem" className="dropdown">
                     <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS <span className="caret"></span></a>
                     <ul className="dropdown-menu">
-                        <li><Link to="/Home" href="#">Life Insurance</Link></li>
+                        <li><Link to="/LifeInsurance" href="#">Life Insurance</Link></li>
                         <li><Link to="/About" href="#">Critical Illness</Link></li>
                         <li><Link to="/About" href="#">Over 50's insurance</Link></li>
                         <li><Link to="/About" href="#">Buildings and contents</Link></li>

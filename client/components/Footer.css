@@ -1,18 +1,18 @@
 .sectionTop {
   background-color: #34454f;
-  height: auto;
-}
-
-.footerMenu{
-  display:inline!important;
-  color: #fff!important;
+  height: 100px;
 }
 
 .sectionBottom{
   background-color: #5d6a72;
   color: #fff;
   padding: 15px;
-  height: auto;
+  height: 100px;
+}
+
+.footerMenu{
+  display:inline!important;
+  color: #fff!important;
 }
 
 .facebook{
@@ -23,4 +23,8 @@
 }
 .linkedin{
   padding-left: 15px;
+}
+
+.footerText{
+  font-size: 0.8em;
 }

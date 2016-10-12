@@ -57,18 +57,33 @@
 
 .dropdown-menu li{
     width:100%;
+    border-bottom: 1px solid grey;
 }
 .dropdown-menu li a {
   text-align:center;
-  background-color: #404040;
-  color: #fff;
-
+  background-color: #e7e7e7;
+  color: grey;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #fff;
     background-color: #34454f;
     border-radius:25px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #e7e7e7;
+    border-radius: 25px;
+}
+
+.navbar-nav>li>.dropdown-menu{
+  padding-top:0px;
+  padding-bottom: 0px;
+  z-index:10;
 }
 
 .container-fluid{
@@ -80,6 +95,7 @@
     padding-left: 0px;
     overflow:hidden;
 }
+
 
 
 /* Bootstrap */
@@ -126,18 +142,21 @@
 /* Cover main iamge */
 .header-main-container{
 
-  height:1300px;
-  /* The image used */
-background-image: url("../images/jumboimg2.jpg");
+  height:100%;
+  background-image: url("../images/jumboimg2.jpg");
 
-/* Set a specific height */
-
-/* Create the parallax scrolling effect */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
 }
+
+
+@media (max-width: 768px) {
+
+}
+
 /* Bootstrap overrides */
 
 .btn-primary{
@@ -223,7 +242,7 @@ background-size: cover
 }
 .footerMenuTop .fa{
   color: #fff!important;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .footerMenuTop{
@@ -233,7 +252,7 @@ background-size: cover
   display:inline!important;
   color: #fff!important;
   padding: 10px;
-  border-right: 1px solid #a0c5d9;
+  border-bottom: 1px solid #a0c5d9;
   margin-bottom: 10px;
 }
 
@@ -242,6 +261,11 @@ background-size: cover
   color: #fff!important;
   font-size: 0.7em;
 
+}
+
+
+.footerMenuBottom ul{
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -273,4 +297,28 @@ background-size: cover
 .main-container{
   padding-bottom: 50px;
   padding-top: 50px;
+}
+
+
+
+
+
+
+
+/* STICKY FOOTER */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+  margin: 0 auto -200px;
+}
+.footer,
+.push {
+  height: 200px;
+}
+
+#app{
+  height:100%;
 }
