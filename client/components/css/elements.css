@@ -1,0 +1,4 @@
+.hr {
+  border-top: 1px solid transparent; /* Bootstrap override */
+  border-bottom: 3px solid RGB(131,169,192);
+}

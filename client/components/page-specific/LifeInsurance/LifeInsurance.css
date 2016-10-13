@@ -1,7 +1,5 @@
-
-
-.logoContainer{
-  display: inline-block;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.moreInfoLink{
+  color: RGB(131,169,192);
+  cursor: pointer;
+  font-weight: bold;
 }

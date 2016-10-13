@@ -30,25 +30,27 @@ export default class QuoteForm extends Component {
     e.preventDefault();
     console.log("Trying to send email")
 
-    let FirstName = document.getElementById("quote-first-name").value;
-    let Surname = document.getElementById("quote-last-name").value;
-    let HomeNumber = document.getElementById("quote-homenumber").value;
-    alert(FirstName);
+    let name = document.getElementById("form-name").value;
+    let email = document.getElementById("form-email").value;
+    let contactNum = document.getElementById("form-number").value;
+    let message = document.getElementById("form-message").value;
+
 
     // parameters: service_id, template_id, template_parameters
-    // window.emailjs.send("outlook","template_KzSBODTp",
-    // {
-    //   to_name: "Insurance MK",
-    //   from_name: FirstName,
-    //   firstname: FirstName,
-    //   surname: Surname,
-    //   homenumber: HomeNumber
-    // })
-    // .then(function(response) {
-    //    console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-    // }, function(err) {
-    //    console.log("FAILED. error=", err);
-    // });
+    window.emailjs.send("outlook","template_KzSBODTp",
+    {
+      to_name: "Simply Insurance",
+      from_name: name,
+      name: name,
+      email: email,
+      contactNum: contactNum,
+      message: message
+    })
+    .then(function(response) {
+       console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+    }, function(err) {
+       console.log("FAILED. error=", err);
+    });
 
   }
 
@@ -72,18 +74,28 @@ export default class QuoteForm extends Component {
           <div className={`${styles.bodyContainer} col-xs-12`}>
             <div className={`col-xs-12 clearfix ${styles.bubbleContainer}`}>
 
-              <div className={`${styles.bubble} row-no-padding col-xs-12 col-sm-8 col-sm-offset-2`}>
-                <h1>I have a question?</h1>
+              <div className={`${styles.bubble} col-xs-12 col-sm-8 col-sm-offset-2`}>
+
+                <div className="col-xs-12">
+                  <h1>I have a question?</h1>
+                </div>
+
                 <div className="col-xs-12 col-sm-6">
-                    <input type="text" placeholder = "Name" className={`${styles.formInput} form-control`}/>
-                    <input type="text" placeholder = "Email" className={`${styles.formInput} form-control`}/>
-                    <div className={`${styles.reccomendedContact}`}>
-                      <i className={`fa fa-facebook-official`} aria-hidden="true"></i>
-                      <label> Recommend</label>
+                    <input id="form-name" type="text" placeholder = "Name" className={`${styles.formInput} form-control`}/>
+                    <input id="form-email" type="text" placeholder = "Email" className={`${styles.formInput} form-control`}/>
+                    <input id="form-number" type="text" placeholder = "Contact Number (Optional)" className={`${styles.formInput} form-control`}/>
+                    <div className={`${styles.reccomendedContainer}`}>
+                      <div className={`${styles.reccomendedButton}`}>
+                        <i className={`fa fa-facebook-official`} aria-hidden="true"></i>
+                        <label className={`${styles.reccomendedLabel}`}> Recommended </label>
+                      </div>
                     </div>
                 </div>
                 <div className="col-xs-12 col-sm-6">
-                  <textarea placeholder="Message" name="questionText" id="" cols="30" rows="10" className={`${styles.formTextarea} form-control`}></textarea>
+                  <textarea id="form-message" placeholder="Message" name="questionText" cols="30" rows="10" className={`${styles.formTextarea} form-control`}></textarea>
+                </div>
+                <div className={`${styles.submitContainer} col-xs-12 col-sm-4 col-sm-offset-4`}>
+                  <input onClick={this._submitForm.bind(this)} type="button" className="btn btn-primary text-center form-control" value="Submit"></input>
                 </div>
               </div>
 

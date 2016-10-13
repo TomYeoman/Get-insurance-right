@@ -80,28 +80,38 @@ left: 51px;
 }
 
 .formInput{
-  composes: inputs from "../../../css/input_styles.css";
+  composes: inputBorder from "../../../css/input_styles.css";
   margin-top:15px;
 }
 .formTextarea{
-  composes: inputs from "../../../css/input_styles.css";
+  composes: inputBorder from "../../../css/input_styles.css";
   margin-top:15px;
+  height:130px!important;
 }
 
-.reccomendedContact{
+.reccomendedButton{
   display:inline;
-  margin-top:15px;
   padding: 5px;
   padding-left:10px;
-  margin-top: 15px;
-  composes: inputs from "../../../css/input_styles.css";
+  composes: inputBorder from "../../../css/input_styles.css";
   composes: Facebook from "../../../css/colours.css";
 }
+
+.reccomendedContainer{
+  margin-top: 40px;
+}
+.reccomendedLabel{
+  padding-left: 5px;
+}
+
 
 .containerPadding{
   composes: Facebook from "../../../css/colours.css";
 }
 
+.submitContainer{
+  margin-top:20px;
+}
 
 
 @media (max-width: 600px) {

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Companies.css';
 import Logos from '../../../css/logos.css'
+import elementStyles from '../../../css/elements.css'
 
 export default class Companies extends React.Component {
   constructor() {
@@ -14,7 +15,7 @@ export default class Companies extends React.Component {
 
         <div className={`col-xs-12`}>
           <div className={`col-xs-4 col-xs-offset-4`}>
-            <hr className={`${styles.homeTextHR}`} />
+            <hr className={`${elementStyles.hr}`} />
           </div>
         </div>
 
