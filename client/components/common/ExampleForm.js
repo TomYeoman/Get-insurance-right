@@ -1,5 +1,4 @@
 import React from 'react'
-import map from 'lodash/map'
 import classnames from 'classnames'
 
 class ExampleForm extends React.Component {
