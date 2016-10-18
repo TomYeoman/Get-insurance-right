@@ -1,6 +1,17 @@
 .logo{
   width: 180px;
-      height: 125px;
+  height: 125px;
   position: absolute;
+
   z-index: 10;
+}
+
+.socialMedia {
+  color: #34454f;
+  font-size: 40px;
+  margin-left: 3px;
+  display:inline;
+}
+.socialMediaContainer {
+
 }

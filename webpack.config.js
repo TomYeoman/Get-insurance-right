@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var combineLoaders = require('webpack-combine-loaders');
 
 var BUILD_DIR = path.resolve(__dirname, 'server/public');
 var APP_DIR = path.resolve(__dirname, 'client');
@@ -27,16 +28,20 @@ var config = {
   ],
   module : {
     loaders : [
-        { test: /\.css$/, loader: "style-loader!css-loader" },
-        { test: /\.png$/, loader: "url-loader?limit=100000" },
-        { test: /\.jpg$/, loader: "file-loader" },
-			{
-		test: /\.css$/,
-		include: [
-			path.resolve(__dirname, "not_exist_path")
-		],
-		loader: "style!css"
-	},
+ {
+      test: /\.css$/,
+      loader: combineLoaders([
+        {
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader',
+          query: {
+            modules: true,
+            localIdentName: '[name]__[local]___[hash:base64:5]'
+          }
+        }
+      ])
+    },
       {
         test : /\.jsx?/,
         include : APP_DIR,

@@ -28,3 +28,15 @@
 .footerText{
   font-size: 0.8em;
 }
+
+
+
+@media (max-width: 768px) {
+  .sectionTop {
+    background-color: #34454f;
+    height: 55px;
+  }
+  .sectionBottom{
+    padding: 0px;
+  }
+}

@@ -1,16 +1,40 @@
 .tileContainer {
   height:200px;
 }
+.tileImage {
+  height:100px;
+}
+.tileHeader{
+  height:50px;
+  color: #fff;
+  margin-top: 10px!important;
+    margin-bottom: 10px!important;
+}
+.tileButton{
+  margin-top:10px;
+  height:30px;
+  margin-bottom:10px;
+}
 
 
 @media (max-width: 768px) {
+  .tileContainer {
+    height:135px;
+  }
+
   .coverTileContainer {
     background-color: transparent;
     padding-top: 0px;
+    padding-bottom: 15px;
   }
 
   .coverTileContainer {
     background-color: transparent;
     padding: 0px;
   }
+  .tileImage {
+    height:75px;
+    width:auto;
+  }
+
 }
