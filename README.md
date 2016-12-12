@@ -1,5 +1,4 @@
-# react-dev-kit
-Basic started for react application
+Life insurance site created in React, With the following goodies
 
 - Babel
 - ES6/ 7
