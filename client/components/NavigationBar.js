@@ -21,10 +21,9 @@ export default () => {
                     <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS <span className="caret"></span></a>
                     <ul className="dropdown-menu">
                         <li><Link to="/LifeInsurance" href="#">Life Insurance</Link></li>
-                        <li><Link to="/About" href="#">Critical Illness</Link></li>
-                        <li><Link to="/About" href="#">Over 50's insurance</Link></li>
-                        <li><Link to="/About" href="#">Buildings and contents</Link></li>
-                        <li><Link to="/About" href="#">Landlord Insurance</Link></li>
+                        <li><Link to="/CriticalIllness" href="#">Critical Illness</Link></li>
+                        <li><Link to="/IncomeProtection" href="#">Income Protection</Link></li>
+                        <li><Link to="/Over50s" href="#">Over 50's Insurance</Link></li>
                     </ul>
                 </li>
                 <li id="AboutMenuItem"><Link to="/About" href="#">ABOUT US</Link></li>

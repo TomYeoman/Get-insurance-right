@@ -38,7 +38,7 @@ export default class App extends React.Component {
                 name="form-field-name"
                 options={options}
                 onChange={this.logChange.bind(this)}
-                placeholder="I want to purchase..."
+                placeholder="I want advice on…"
             />
           </div>
         </div>
