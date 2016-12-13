@@ -29,8 +29,8 @@ export default class App extends React.Component {
         <div className={`text-center`}>
           <div className={`${styles.textContainer}`}>
             <h1 className={`${styles.jumboHeader}`}>a fresh new approach to life insurance</h1>
-            <h3 className={`${styles.subHeading}`}> Talk to one of our experts on</h3>
-            <span className={`${styles.phoneNumber}`}>07657 155 263</span> or <span className={`${styles.phoneNumber}`}>01908 411 142</span>
+            <h4 className={`${styles.subHeading}`}> Talk to one of our experts on</h4>
+            <span className={`${styles.phoneNumber}`}>07657 155 263</span> <h3 className={`${styles.phoneNumberMiddle}`}> / </h3> <span className={`${styles.phoneNumber}`}>01908 411 142</span>
           </div>
 
           <div className={`${styles.selectContainer} col-sm-10 col-sm-offset-1 col-xs-12`}>

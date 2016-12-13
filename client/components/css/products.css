@@ -5,9 +5,11 @@
 }
 
 .lifeInsuranceContainer{
+  margin-top: 30px;
+  margin-bottom: 45px;
   background:#e8eef3;
   padding:15px;
-
+    border-radius: 20px;
 }
 
 .sectionHeader{
@@ -19,18 +21,21 @@
 }
 
 .sectionText{
-  padding: 15px;
+  padding-left: 30px;
 }
 
 .pageTitle{
-  margin-top: 30px;
+  margin-top: 40px;
   font-weight: bold;
   font-size: 2em;
   color: #34454f;
+  padding-left: 65px;
 }
 
 .productContainer{
-  margin: 50px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: 50px;
 }
 
 @media (max-width: 768px) {
@@ -40,17 +45,16 @@
 
 }
 
-
-
 /* Right Side contact info (Contact Information & Buttons) */
 
 .contactContainer{
   -webkit-box-shadow: 11px 0px 65px -9px rgba(0,0,0,0.75);
--moz-box-shadow: 11px 0px 65px -9px rgba(0,0,0,0.75);
-box-shadow: 11px 0px 65px -9px rgba(0,0,0,0.75);
-padding: 15px;
-text-align:center;
-font-weight: bold;
+  -moz-box-shadow: 11px 0px 65px -9px rgba(0,0,0,0.75);
+  box-shadow: 11px 0px 65px -9px rgba(0,0,0,0.75);
+  padding: 15px;
+  text-align:center;
+  font-weight: bold;
+  border-radius: 20px;
 }
 
 .getQuoteButton{

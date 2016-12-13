@@ -8,15 +8,28 @@
 .jumboHeader {
   color: #e5860f!important;
   font-size: 3em!important;
+  letter-spacing: 1px;
+
 }
 
 .subHeading{
-  font-size: 1em!important;
+  /*font-size: 1em!important;*/
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .phoneNumber {
   font-weight: bold;
-  font-size: 1.5em!important;
+  font-size: 1.7em!important;
+  font-family: "arial"
+}
+
+.phoneNumberMiddle{
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline;
+  font-size: 1.8em!important;
+
 }
 
 .jumboIcons {
@@ -27,8 +40,8 @@
 
 .jumboLogo {
   color: #34454f;
-  font-size: 40px;
-  margin-left: 20px;
+  font-size: 35px;
+  margin-left: 15px;
   display:inline;
 }
 
