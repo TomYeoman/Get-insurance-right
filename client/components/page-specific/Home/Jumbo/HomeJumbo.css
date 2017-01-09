@@ -6,10 +6,10 @@
 }
 
 .jumboHeader {
-  color: #e5860f!important;
-  font-size: 3em!important;
+  color: #78be20!important;
+  font-size: 2.7em!important;
   letter-spacing: 1px;
-
+  font-weight: bold;
 }
 
 .subHeading{
@@ -39,7 +39,7 @@
 }
 
 .jumboLogo {
-  color: #34454f;
+  color: rgb(27, 27, 27);
   font-size: 35px;
   margin-left: 15px;
   display:inline;
@@ -53,7 +53,7 @@
 
 @media (max-width: 768px) {
   .jumboHeader {
-    color: #e5860f!important;
+    color: #78be20!important;
     font-size: 1.2em!important;
   }
   .subHeading{

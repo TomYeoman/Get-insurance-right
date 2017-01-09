@@ -84,12 +84,12 @@ export default class QuoteForm extends Component {
                     <input id="form-name" type="text" placeholder = "Name" className={`${styles.formInput} form-control`}/>
                     <input id="form-email" type="text" placeholder = "Email" className={`${styles.formInput} form-control`}/>
                     <input id="form-number" type="text" placeholder = "Contact Number (Optional)" className={`${styles.formInput} form-control`}/>
-                    <div className={`${styles.reccomendedContainer}`}>
-                      <div className={`${styles.reccomendedButton}`}>
-                        <i className={`fa fa-facebook-official`} aria-hidden="true"></i>
-                        <label className={`${styles.reccomendedLabel}`}> Recommended </label>
-                      </div>
-                    </div>
+
+                    <select name="" id="cover_type">
+                      <option value="life"></option>
+                    </select>
+
+
                 </div>
                 <div className="col-xs-12 col-sm-6">
                   <textarea id="form-message" placeholder="Message" name="questionText" cols="30" rows="10" className={`${styles.formTextarea} form-control`}></textarea>

@@ -86,18 +86,22 @@ export default class QuoteForm extends Component {
                     <input id="form-name" type="text" placeholder = "Name" className={`${styles.formInput} form-control`}/>
                     <input id="form-email" type="text" placeholder = "Email" className={`${styles.formInput} form-control`}/>
                     <input id="form-number" type="text" placeholder = "Contact Number (Optional)" className={`${styles.formInput} form-control`}/>
-                    <div className={`${styles.reccomendedContainer}`}>
-                      <div className={`${styles.reccomendedButton}`}>
-                        <i className={`fa fa-facebook-official`} aria-hidden="true"></i>
-                        <label className={`${styles.reccomendedLabel}`}> Recommended </label>
-                      </div>
-                    </div>
+                    <select className={`${styles.formInput} form-control`} name="" id="">
+                      <option selected="selected" value="General">Enquiry topic...</option>
+                      <option value="Select enquiry topic">Life insurance</option>
+                      <option value="Select enquiry topic">Critical illness</option>
+                      <option value="Select enquiry topic">Income protection</option>
+                      <option value="Select enquiry topic">Over 50's insurance</option>
+                      <option value="Select enquiry topic">General</option>
+                    </select>
+
+
                 </div>
                 <div className="col-xs-12 col-sm-6">
                   <textarea id="form-message" placeholder="Message" name="questionText" cols="30" rows="10" className={`${styles.formTextarea} form-control`}></textarea>
                 </div>
                 <div className={`${styles.submitContainer} col-xs-12 col-sm-4 col-sm-offset-4`}>
-                  <input onClick={this._submitForm.bind(this)} type="button" className="btn btn-primary text-center form-control" value="Submit"></input>
+                  <input onClick={this._submitForm.bind(this)} type="button" className="btn btn-secondary text-center form-control" value="Submit"></input>
                 </div>
               </div>
 
