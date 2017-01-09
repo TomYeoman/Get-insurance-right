@@ -18,7 +18,7 @@ let styles = {
     "WebkitBoxShadow": "6px 6px 8px -1px rgba(127, 127, 127, 0.5)",
     "boxShadow": "6px 6px 8px rgba(127, 127, 127, 0.5)",
     "borderColor": "#000000",
-    "backgroundColor": "RGB(52,69,77)",
+    "backgroundColor": "#1b1b1b",
     "height": "auto",
     "marginBottom": "10px",
     "paddingTop" : "5px",

@@ -1,19 +1,30 @@
+#background_wrap {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-image: url("../images/jumboimg2.jpg");
+    background-attachment: fixed;
+}
 
 
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
+/*stick footer*/
+html, body {
   height: 100%;
-  z-index: -10;
-  background: url(photos/2452.jpg) no-repeat center center;
-  -webkit-background-size: cover;
+  margin: 0;
+}
+
+body{
+  -webkit-background-size: cover !important;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed !important;
+  position: static !important;
+  z-index: -1 !important;
 }
 
 /*Custom React select styles*/
@@ -200,8 +211,9 @@ margin-top: 30px;
 
 .btn-primary{
   border-radius:20px!important;
-  background-color: #34454f!important;
+  background-color: #78be20!important;
       border-color: #34454f!important;
+      font-weight: bold;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
@@ -351,10 +363,7 @@ margin-top: 30px;
 
 
 /* STICKY FOOTER */
-html, body {
-  height: 100%;
-  margin: 0;
-}
+
 .content {
   min-height: 100%;
   margin: 0 auto -200px;

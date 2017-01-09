@@ -7,6 +7,7 @@ import LifeInsurance from './components/page-specific/LifeInsurance/LifeInsuranc
 import CriticalIllness from './components/page-specific/CriticalIllness/CriticalIllness';
 import About from './components/page-specific/About/About';
 import Contact from './components/page-specific/Contact/Contact';
+import QuoteForm from './components/common/QuoteForm';
 
 export default (
 
@@ -17,7 +18,10 @@ export default (
     <Route path="/CriticalIllness" component={CriticalIllness} />
     <Route path="/About" component={About} />
     <Route path="/Contact" component={Contact} />
+    <Route path="/quote" component={QuoteForm} />
     <Route path="*" component={Home} / >
   </Route>
 
 )
+
+// <Route path="/quote" component={QuoteForm} />

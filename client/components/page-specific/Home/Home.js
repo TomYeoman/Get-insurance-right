@@ -45,7 +45,6 @@ export default class Home extends React.Component {
             <Information/>
             <HomeTiles />
             <CompanyLogosLarge />
-            <QuestionForm />
           </div>
         </div>
 
@@ -57,7 +56,6 @@ export default class Home extends React.Component {
             <HomeJumbotron/>
             <HomeTiles />
             <CompanyLogosSmall />
-            <QuestionForm />
           </div>
         </div>
       )

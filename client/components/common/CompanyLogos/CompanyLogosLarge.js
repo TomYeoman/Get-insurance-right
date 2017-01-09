@@ -21,42 +21,38 @@ export default class Companies extends React.Component {
         </div>
 
         <div className={`container ${styles.logoContainer} row-no-padding clearfix text-center`}>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.aegon}`} src="images/logos/aegon.png" alt=""/>
+
+          <div className="col-sm-6">
+            <div className="col-xs-4 col-sm-3">
+              <img className={`${Logos.logoLarge}`} src="images/logos/agean.png" alt=""/>
+            </div>
+            <div className="col-xs-4 col-sm-3">
+              <img className={`${Logos.logoLarge}`} src="images/logos/L&G.png" alt=""/>
+            </div>
+            <div className="col-xs-4 col-sm-3">
+              <img className={`${Logos.logoLarge}`} src="images/logos/zurich.png" alt=""/>
+            </div>
+            <div className="col-xs-4 col-sm-3">
+              <img className={`${Logos.logoLarge}`} src="images/logos/aig.png" alt=""/>
+            </div>
           </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.ageas}`} src="images/logos/ageas.png" alt=""/>
+
+          <div className="col-sm-6">
+
+            <div className="col-xs-4 col-sm-3">
+              <img className={`${Logos.logoLarge}`} src="images/logos/royallondon.png" alt=""/>
+            </div>
+            <div className="col-xs-4 col-sm-3">
+              <img className={`${Logos.logoLarge}`} src="images/logos/lv.png" alt=""/>
+            </div>
+            <div className="col-xs-4 col-sm-3">
+              <img className={`${Logos.logoLarge}`} src="images/logos/aviva.png" alt=""/>
+            </div>
+            <div className="col-xs-4 col-sm-3">
+              <img className={`${Logos.logoLarge}`} src="images/logos/asdamoney.png" alt=""/>
+            </div>
           </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.aviva}`} src="images/logos/aviva.png" alt=""/>
-          </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.brightgrey}`} src="images/logos/brightgrey.png" alt=""/>
-          </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.friendlife}`} src="images/logos/friendlife.png" alt=""/>
-          </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.lv}`} src="images/logos/legalandgeneral.png" alt=""/>
-          </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.partnership}`} src="images/logos/lv.png" alt=""/>
-          </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.ageas}`} src="images/logos/partnership.png" alt=""/>
-          </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.aviva}`} src="images/logos/provident.png" alt=""/>
-          </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.brightgrey}`} src="images/logos/pru.png" alt=""/>
-          </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.friendlife}`} src="images/logos/zurich.png" alt=""/>
-          </div>
-          <div className="col-xs-6 col-sm-2">
-            <img className={`${Logos.lv}`} src="images/logos/lv.png" alt=""/>
-          </div>
+
 
         </div>
 

@@ -1,9 +1,9 @@
 .homeTextHR {
-  border-bottom: 5px solid RGB(131,169,192);
+  border-bottom: 5px solid #78be20;
 }
 
 .homeWelcomeTextContainer {
-  background-color: #e8eef3;
+  background-color: transparent;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -19,5 +19,5 @@
 
 
 .logoContainer{
-  background: #fff;
+  background: transparent;
 }

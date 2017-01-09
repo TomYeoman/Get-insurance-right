@@ -1,10 +1,10 @@
 .sectionTop {
-  background-color: #34454f;
+  background-color: rgb(27, 27, 27);
   height: 100px;
 }
 
 .sectionBottom{
-  background-color: #5d6a72;
+  background-color: #545554;
   color: #fff;
   padding: 15px;
   height: 100px;

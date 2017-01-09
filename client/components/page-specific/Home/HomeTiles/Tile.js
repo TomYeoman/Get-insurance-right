@@ -43,7 +43,7 @@ export default class Tiles extends Component  {
                 <img className={`${Tile_.tileImage}`} src={this.props.imgsrc}></img>
               </div>
 
-              <div className="col-xs-8 col-xs-offset-2">
+              <div className="col-xs-8 col-xs-offset-2 ">
                 <input onClick={this._getQuoteClick.bind(this)} type="button" className={`${Tile_.tileButton} btn btn-primary form-control text-center`} value="GET QUOTE"></input>
               </div>
 
