@@ -5,11 +5,9 @@ import { browserHistory } from 'react-router'
 var Select = require('react-select');
 var options = [
     { value: 'LifeInsurance', label: 'Life Insurance' },
-    { value: 'critical', label: 'Critical Illness' },
-    { value: 'over50s', label: `,Over 50's Insurance` },
-    { value: 'income', label: 'Income Protection' },
-    { value: 'buildings', label: 'Building and contents' },
-    { value: 'landlord', label: 'Landlord Insurance' }
+    { value: 'CriticalIllness', label: 'Critical Illness' },
+    { value: 'Over50s', label: `Over 50's Insurance` },
+    { value: 'IncomeProtection', label: 'Income Protection' }
 ];
 
 export default class App extends React.Component {

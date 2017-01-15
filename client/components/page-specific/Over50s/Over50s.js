@@ -27,11 +27,11 @@ export default class Home extends React.Component {
     return (
       <div className={`row-no-padding`}>
         <div className="col-xs-12">
-          <div className={`${Products.lifeInsuranceContainer} ${Shadow.containerShadow} container product-container`}>
+          <div className={`${Products.lifeInsuranceContainer} ${Shadow.containerShadow} container main-container`}>
 
             {/* Title */}
 
-            <h3 className={`${Products.pageTitle} col-xs-12`}>Life Insurance</h3>
+            <h3 className={`${Products.pageTitle} col-xs-12`}>Over 50{"'"}s insurance</h3>
             <div className="col-xs-12">
               <div className="col-xs-12">
                 <hr className={`${elementProducts.hr}`} />
@@ -46,7 +46,7 @@ export default class Home extends React.Component {
               <div className="col-xs-12 col-sm-7">
                 <h4 className={`${Products.sectionHeader}`} >What is Life Insurance{'?'}</h4>
                 <div className={`${Products.sectionText}`}>
-                <p>A Life Insurance policy provides a lump sum of money for family members in the event of the policyholder's death during the term of the policy. It is primarily designed to help protect immediate family members and possibly other dependents from financial hardship by providing the means to pay off the mortgage on the family home and/or by providing income to the surviving spouse to maintain their standard of living.</p>                  <p>Most Life &amp; Critical Illness Cover policies cover a fixed term, often linked to the duration of a mortgage, and therefore Life Insurance can also be known as <strong>Term Life Insurance, Mortgage Protection, Mortgage Life Insurance </strong>and<strong> Term Assurance.</strong></p>
+                <p>A Life Insurance policy provides a lump sum of money for family members in the event of the policyholder{`'`}s death during the term of the policy. It is primarily designed to help protect immediate family members and possibly other dependents from financial hardship by providing the means to pay off the mortgage on the family home and/or by providing income to the surviving spouse to maintain their standard of living.</p>                  <p>Most Life &amp; Critical Illness Cover policies cover a fixed term, often linked to the duration of a mortgage, and therefore Life Insurance can also be known as <strong>Term Life Insurance, Mortgage Protection, Mortgage Life Insurance </strong>and<strong> Term Assurance.</strong></p>
                 <p>Most life insurance policies cover a fixed term, often linked to the duration of a mortgage, and therefore Life Insurance can also be known as <strong>Term Life Insurance, Mortgage Protection, Mortgage Life Insurance </strong>and<strong> Term Assurance.</strong></p>
                 </div>
               </div>
@@ -96,10 +96,10 @@ export default class Home extends React.Component {
 
               <CompanyLogosSmall />
 
-            </div> {/* productContainer */}
-          </div> {/* pagecontainer */}
-        </div> {/* col-xs-12 */}
-      </div> 
+            </div> /* productContainer */
+          </div> /* pagecontainer */
+        </div> /* col-xs-12 */
+      </div> /* row no padding */
     )
   }
 }

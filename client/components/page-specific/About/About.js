@@ -27,7 +27,7 @@ export default class Home extends React.Component {
     return (
       <div className={`row-no-padding`}>
         <div className="col-xs-12">
-          <div className={`${Products.lifeInsuranceContainer} ${Shadow.containerShadow} container main-container`}>
+          <div className={`${Products.lifeInsuranceContainer} ${Shadow.containerShadow} container product-container`}>
 
             <div className={`col-xs-12`}>
 

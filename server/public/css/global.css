@@ -190,6 +190,20 @@ margin-top: 30px;
 }
 
 /* Cover main iamge */
+
+.product-main-container{
+  background: url("../images/jumboimg2.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.product-container{
+
+}
+
+
 .header-main-container{
 
   height:100%;
@@ -204,7 +218,9 @@ margin-top: 30px;
 
 
 @media (max-width: 768px) {
-
+  .product-container{
+    margin: 15px;
+  }
 }
 
 /* Bootstrap overrides */
