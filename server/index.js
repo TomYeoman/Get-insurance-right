@@ -7,14 +7,12 @@ import webpackMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import webpackConfig from '../webpack.config.dev.js';
 
-import users from './routes/users';
 
 let app = express();
 
 
 // We need to create a post request to users, Define the API we will users
-app.use(bodyParser.json());
-app.use('/api/users', users);
+// app.use(bodyParser.json());
 
 const compiler = webpack(webpackConfig);
 

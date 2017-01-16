@@ -27,16 +27,6 @@ export default class Information extends React.Component {
         <h4>Content, Landlord Insurance.</h4>
         <br/>
 
-        <div>
-          <h4 className={`${styles.smallerText}`}>We are an independant insurance firm who pride ourself on excellent service and believe our </h4>
-          <h4 className={`${styles.smallerText}`}>customer relationships are what make us special.</h4>
-          <br/>
-
-          <h4 className={`${styles.smallerText}`}>We are experienced in catering for a broad range of circumstances, and our dedicated hands on team</h4>
-          <h4 className={`${styles.smallerText}`}>will guarantee to find you the best deal. </h4>
-          <br/>
-
-        </div>
       </div>
 
     )

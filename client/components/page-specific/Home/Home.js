@@ -55,7 +55,7 @@ export default class Home extends React.Component {
           <div className={`col-xs-12`}>
             <HomeJumbotron/>
             <HomeTiles />
-            <CompanyLogosSmall />
+            <CompanyLogosLarge />
           </div>
         </div>
       )

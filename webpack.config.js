@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 var combineLoaders = require('webpack-combine-loaders');
 
-var BUILD_DIR = path.resolve(__dirname, 'server/public');
+var BUILD_DIR = path.resolve(__dirname, 'server/public/js');
 var APP_DIR = path.resolve(__dirname, 'client');
 
 var config = {

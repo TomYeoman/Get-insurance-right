@@ -2,7 +2,7 @@
 import elementProducts from '../../css/elements.css'
 import Shadow from '../../css/shadow.css'
 import Logos from '../../css/logos.css'
-import CompanyLogosSmall from '../../common/CompanyLogos/CompanyLogosSmall'
+import CompanyLogosLarge from '../../common/CompanyLogos/CompanyLogosLarge.js'
 import Products from '../../css/products.css'
 // React
 import React from 'react'
@@ -26,7 +26,7 @@ export default class Home extends React.Component {
   render () {
     return (
       <div className={`row-no-padding`}>
-        <div className="col-xs-12">
+        <div className={`productPageContainer col-xs-12`}>
           <div className={`${Products.lifeInsuranceContainer} ${Shadow.containerShadow} container product-container`}>
 
             {/* Title */}
@@ -94,12 +94,12 @@ export default class Home extends React.Component {
                 </div>
               </div>
 
-              <CompanyLogosSmall />
+              <CompanyLogosLarge/>
 
             </div> {/* productContainer */}
           </div> {/* pagecontainer */}
         </div> {/* col-xs-12 */}
-      </div> 
+      </div>
     )
   }
 }

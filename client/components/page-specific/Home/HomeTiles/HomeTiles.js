@@ -54,16 +54,16 @@ export default class App extends React.Component {
             <div className="clearfix col-xs-6 col-sm-6 col-md-4">
               <ShadowContainer>
                 <Tile
-                  title="Buildings & Contents"
-                  imgsrc="images/icon_buildingcontent.png"
+                  title="Why Choose Simply"
+                  imgsrc="images/questionmark.png"
                 />
               </ShadowContainer>
             </div>
             <div className="clearfix col-xs-6 col-sm-6 col-md-4">
               <ShadowContainer>
                 <Tile
-                  title="Landlord Insurance"
-                  imgsrc="images/icon_landlord.png"
+                  title="Get In Touch"
+                  imgsrc="images/phonelogo.png"
                 />
               </ShadowContainer>
             </div>

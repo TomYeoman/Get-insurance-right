@@ -21,7 +21,7 @@ export default (
     <Route path="/IncomeProtection" component={IncomeProtection} />
     <Route path="/Over50s" component={Over50s} />
     <Route path="/About" component={About} />
-    <Route path="/Contact" component={Contact} />
+    <Route path="/ContactUs" component={QuoteForm} />
     <Route path="/quote" component={QuoteForm} />
     <Route path="*" component={Home} / >
   </Route>

@@ -1,15 +1,3 @@
-#background_wrap {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    background-image: url("../images/jumboimg2.jpg");
-    background-attachment: fixed;
-}
-
 
 /*stick footer*/
 html, body {
@@ -189,22 +177,8 @@ margin-top: 30px;
   font-family: 'Lalezar', cursive;
 }
 
-/* Cover main iamge */
 
-.product-main-container{
-  background: url("../images/jumboimg2.jpg") no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-
-.product-container{
-
-}
-
-
-.header-main-container{
+.header-main-container, .productPageContainer{
 
   height:100%;
   background-image: url("../images/jumboimg2.jpg");
@@ -213,7 +187,7 @@ background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
 }
 
 

@@ -26,17 +26,8 @@ export default () => {
                         <li><Link to="/Over50s" href="#">OVER 50'S INSURANCE</Link></li>
                     </ul>
                 </li>
-                <li id="AboutMenuItem"><Link to="/About" href="#">ABOUT US</Link></li>
-
-                <li id="ProductsMenuItem" className="dropdown">
-                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">INSURANCE PROVIDERS <span className="caret"></span></a>
-                    <ul className="dropdown-menu">
-                        <li><Link to="/LifeInsurance" href="#">LIFE INSURANCE</Link></li>
-                        <li><Link to="/CriticalIllness" href="#">CRITICAL ILLNESS</Link></li>
-                        <li><Link to="/IncomeProtection" href="#">INCOME PROTECTIOn</Link></li>
-                        <li><Link to="/Over50s" href="#">OVER 50{"'"}S INSURANCE</Link></li>
-                    </ul>
-                </li>
+                <li id="AboutMenuItem"><Link to="/About" href="#">WHY CHOOSE SIMPLY</Link></li>
+                <li id="ContactMenuItem"><Link to="/ContactUs" href="#">CONTACT US</Link></li>
 
               </ul>
             </div>
