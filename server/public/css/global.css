@@ -3,6 +3,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 body{
@@ -195,6 +196,15 @@ margin-top: 30px;
   .product-container{
     margin: 15px;
   }
+
+  .dropdown-menu li {
+    border-bottom: 0px solid transparent;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #78be20;
+  }
+
 }
 
 /* Bootstrap overrides */
@@ -277,7 +287,6 @@ margin-top: 30px;
   display: inline-block!important;
   color: #fff!important;
   padding: 10px;
-  border-right: 1px solid #a0c5d9;
   margin-bottom: 10px;
 }
 
@@ -390,3 +399,7 @@ margin-top: 30px;
   font-weight: bold;
   color: #fff;
 }
+
+
+
+/* Animanate Submenus *.

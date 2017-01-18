@@ -29,6 +29,9 @@
   font-size: 0.8em;
 }
 
+.borderRight{
+  border-right: 1px solid #a0c5d9;
+}
 
 
 @media (max-width: 768px) {

@@ -15,6 +15,9 @@
   height:30px;
   margin-bottom:15px;
 }
+.tileHeader{
+  color: "#fff";
+}
 
 
 @media (max-width: 768px) {

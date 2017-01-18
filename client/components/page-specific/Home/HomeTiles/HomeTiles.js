@@ -24,6 +24,7 @@ export default class App extends React.Component {
                 <Tile
                   title="Life Insurance"
                   imgsrc="images/icon_lifeinsurance.png"
+                  route="LifeInsurance"
                 />
               </ShadowContainer>
             </div>
@@ -32,6 +33,7 @@ export default class App extends React.Component {
                 <Tile
                   title="Critical Illness"
                   imgsrc="images/icon_illness.png"
+                  route="CriticalIllness"
                 />
               </ShadowContainer>
             </div>
@@ -40,6 +42,7 @@ export default class App extends React.Component {
                 <Tile
                   title="Over 50's Insurance"
                   imgsrc="images/icon_over50s.png"
+                  route="Over50s"
                 />
               </ShadowContainer>
             </div>
@@ -48,6 +51,7 @@ export default class App extends React.Component {
                 <Tile
                   title="Income Protection"
                   imgsrc="images/icon_incomeprotection.png"
+                  route="IncomeProtection"
                 />
               </ShadowContainer>
             </div>
@@ -56,6 +60,7 @@ export default class App extends React.Component {
                 <Tile
                   title="Why Choose Simply"
                   imgsrc="images/questionmark.png"
+                  route="About"
                 />
               </ShadowContainer>
             </div>
@@ -64,6 +69,7 @@ export default class App extends React.Component {
                 <Tile
                   title="Get In Touch"
                   imgsrc="images/phonelogo.png"
+                  route="ContactUs"
                 />
               </ShadowContainer>
             </div>

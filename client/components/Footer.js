@@ -26,10 +26,10 @@ export default class Footer extends React.Component {
                </div>
                 <div className="row-no-padding">
                    <ul className={`col-xs-12 col-sm-9 text-center`}>
-                     <li className="col-xs-3 col-sm-3"><Link to="/Home" href="#">HOME</Link></li>
-                     <li className="col-xs-3 col-sm-3"><Link to="/LifeInsurance" href="#">LIFE INSURANCE</Link></li>
-                     <li className="col-xs-3 col-sm-3"><Link to="/Home" href="#">WHY CHOOSE SIMPLY</Link></li>
-                     <li className="col-xs-3 col-sm-3"><Link to="/Home" href="#">CONTACT</Link></li>
+                     <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/Home" href="#">HOME</Link></li>
+                     <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/LifeInsurance" href="#">LIFE INSURANCE</Link></li>
+                     <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/Home" href="#">WHY CHOOSE SIMPLY</Link></li>
+                     <li className={`col-xs-3 col-sm-3`}><Link to="/Home" href="#">CONTACT</Link></li>
                    </ul>
                 </div>
 
@@ -42,10 +42,10 @@ export default class Footer extends React.Component {
                 <p className={`${Footer_.footerText} hidden-xs`}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada vitae leo et tempor. In dui augue, eleifend a euismod at, ultricies non metus. Donec posuere ac ipsum sed maximus. Etiam volutpat orci eget posuere placerat. Fusce tristique odio nec augue tempor, in gravida sapien vestibulum. Donec a dui eget magna semper blandit. Donec luctus velit ex, ut suscipit nulla iaculis vitae. </p>
 
                 <ul className={``}>
-                  <li><Link to="/Home" href="#">TERMS AND CONDITIONS</Link></li>
-                  <li><Link to="/Home" href="#">PRIVACY POLICY</Link></li>
-                  <li><Link to="/Home" href="#">COOKIES</Link></li>
-                  <li><Link to="/Home" href="#">COMPLAINTS POLICY</Link></li>
+                  <li><Link to="/TermsAndConditions" href="#">TERMS AND CONDITIONS</Link></li>
+                  <li><Link to="/PrivacyPolicy" href="#">PRIVACY POLICY</Link></li>
+                  <li><Link to="/Cookies" href="#">COOKIES</Link></li>
+                  <li><Link to="/ComplaintsPolicy" href="#">COMPLAINTS POLICY</Link></li>
                 </ul>
               </div>
             </div>

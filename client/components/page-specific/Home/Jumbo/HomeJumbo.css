@@ -21,7 +21,7 @@
 .phoneNumber {
   font-weight: bold;
   font-size: 1.7em!important;
-  font-family: "arial"
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 .phoneNumberMiddle{
