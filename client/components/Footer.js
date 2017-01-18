@@ -28,8 +28,8 @@ export default class Footer extends React.Component {
                    <ul className={`col-xs-12 col-sm-9 text-center`}>
                      <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/Home" href="#">HOME</Link></li>
                      <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/LifeInsurance" href="#">LIFE INSURANCE</Link></li>
-                     <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/Home" href="#">WHY CHOOSE SIMPLY</Link></li>
-                     <li className={`col-xs-3 col-sm-3`}><Link to="/Home" href="#">CONTACT</Link></li>
+                     <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/About" href="#">WHY CHOOSE SIMPLY</Link></li>
+                     <li className={`col-xs-3 col-sm-3`}><Link to="/Contact" href="#">CONTACT</Link></li>
                    </ul>
                 </div>
 

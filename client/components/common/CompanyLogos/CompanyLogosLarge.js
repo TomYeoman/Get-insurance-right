@@ -13,7 +13,7 @@ export default class Companies extends React.Component {
 
 
 
-        <div className={`container ${styles.logoContainer} row-no-padding clearfix text-center`}>
+        <div className={`container ${styles.logoContainer} row-no-padding col-xs-12`}>
           <div className="col-sm-6 row-no-padding">
 
             <div className="col-xs-3 col-sm-3 clearfix clearfix">

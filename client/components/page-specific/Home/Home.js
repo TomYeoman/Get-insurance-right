@@ -44,7 +44,9 @@ export default class Home extends React.Component {
             <HomeJumbotron/>
             <Information/>
             <HomeTiles />
-            <CompanyLogosLarge />
+            <div className="col-xs-12 col-sm-8 col-sm-offset-2">
+              <CompanyLogosLarge />
+            </div>
           </div>
         </div>
 

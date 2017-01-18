@@ -93,10 +93,10 @@ export default class Home extends React.Component {
                     <p>Further cover can be provided with <strong>Critical Illness Insurance</strong>, which pays out the amount of money insured should the policyholder be diagnosed with having one of the specified Critical Illnesses. Not all companies have the same Critical Illnesses, so it is important that the policyholder is familiar with the inclusions and exclusions before any documentation is signed.</p>
                 </div>
               </div>
-
-              <CompanyLogosLarge/>
-
             </div> {/* productContainer */}
+
+            <CompanyLogosLarge/>
+
           </div> {/* pagecontainer */}
         </div> {/* col-xs-12 */}
       </div>
