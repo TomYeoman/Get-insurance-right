@@ -25,33 +25,32 @@ export default class Home extends React.Component {
 
   render () {
     return (
-      <div className={`row-no-padding`}>
-        <div className="col-xs-12">
-          <div className={`${Products.lifeInsuranceContainer} ${Shadow.containerShadow} container product-container`}>
+        <div className={`row-no-padding`}>
+            <div className="col-xs-12">
+                <div className={`${Products.lifeInsuranceContainer} ${Shadow.containerShadow} container product-container`}>
+                    <div className={`col-xs-12`}>
 
-            <div className={`col-xs-12`}>
+                        <h2>About us</h2>
 
-              <h2>Getting the RIGHT life insurance means getting the RIGHT advice</h2>
+                        <p>Simplylifeinsurance.com offers customers access to the very best quotes and advice on Protection products available in the UK.</p>
+                        <p>In our view, the best intermediaries are generally smaller specialist firms who provide a more personalised service. We can still provide very competitive prices just like some of the more high profile web-brands, but we understand the importance to you, the customer, of value over simply price.</p>
 
-            <br/>
-              <p>It's amazing how many people buy life insurance without getting professional advice, only to find that the policy has insufficient cover. So before you buy life insurance speak to us, we won't just get you an affordable life insurance policy, we'll get you the RIGHT policy.</p>
-  <br/>
-              <h3>Our advisors can help you decide: </h3>
+                        <p>We search the whole of the market for the most suitable products and the best premiums so that you can compare the various options available and make an informed choice.All you need to do is provide us with details of the cover you require along with your contact details using the brief form provided, and one of our specialist advisers will contact you.</p>
+                        <br/>
 
-              <h6><i className={`${styles.facheck} fa fa-check`} aria-hidden="true"></i> How long your term life assurance policy needs to be</h6>
+                        <h2>Where to find us</h2>
 
-              <h6><i className={`${styles.facheck} fa fa-check`} aria-hidden="true"></i> How much life cover you need</h6>
+                        <p>QuoteLifeCover.com is a trading name of British Life Ltd, a company registered in England no. 05559125.</p>
+                        <p>Registered Office Address: 1 Paper Mews, 330 High Street, Dorking, Surrey, United Kingdom, RH4 2TU</p>
 
-              <h6><i className={`${styles.facheck} fa fa-check`} aria-hidden="true"></i> What type of life assurance is best for your needs</h6>
+                        <div className="google-maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804"></iframe>
+                        </div>
 
-              <h6><i className={`${styles.facheck} fa fa-check`} aria-hidden="true"></i> And once we've found you low cost life insurance, we'll even complete the paperwork!</h6>
-  <br/>
-              <p>When buying insurance it is essential to find the RIGHT insurer based on your health, hobbies and lifestyle as this will have a major effect on the final premium you will pay. We are passionate in finding you the RIGHT insurer with the very best cover for your individual circumstances, whilst making sure we secure you the most competitive rates in the marketplace today.</p>
-            </div>
-
-          </div> {/* pagecontainer */}
-        </div> {/* col-xs-12 */}
-      </div>
+                    </div>
+                </div> {/* pagecontainer */}
+            </div> {/* col-xs-12 */}
+        </div>
     )
   }
 }

@@ -36,20 +36,25 @@ export default class Footer extends React.Component {
              </div>
 
           </div>
-          <div className={`${Footer_.sectionBottom}`}>
-            <div className={`footerMenuBottom`}>
-              <div className="footerMenu container">
-                <p className={`${Footer_.footerText} hidden-xs`}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada vitae leo et tempor. In dui augue, eleifend a euismod at, ultricies non metus. Donec posuere ac ipsum sed maximus. Etiam volutpat orci eget posuere placerat. Fusce tristique odio nec augue tempor, in gravida sapien vestibulum. Donec a dui eget magna semper blandit. Donec luctus velit ex, ut suscipit nulla iaculis vitae. </p>
+            <div className={`${Footer_.sectionBottom}`}>
+                <div className={`footerMenuBottom`}>
+                    <div className="footerMenu container">
+                        <ul className={``}>
+                            <li><Link to="/TermsAndConditions" href="#">TERMS AND CONDITIONS</Link></li>
+                            <li><Link to="/PrivacyPolicy" href="#">PRIVACY POLICY</Link></li>
+                            <li><Link to="/Cookies" href="#">COOKIES</Link></li>
+                            <li><Link to="/ComplaintsPolicy" href="#">COMPLAINTS POLICY</Link></li>
+                        </ul>
+                    </div>
+                    <div className="container text-center">
+                        <p>QuoteLifeCover.com is a trading name of British Life Ltd, a company registered in England no. 05559125.</p>
+                        <p>Registered Office Address: 1 Paper Mews, 330 High Street, Dorking, Surrey, United Kingdom, RH4 2TU</p>
+                    </div>
 
-                <ul className={``}>
-                  <li><Link to="/TermsAndConditions" href="#">TERMS AND CONDITIONS</Link></li>
-                  <li><Link to="/PrivacyPolicy" href="#">PRIVACY POLICY</Link></li>
-                  <li><Link to="/Cookies" href="#">COOKIES</Link></li>
-                  <li><Link to="/ComplaintsPolicy" href="#">COMPLAINTS POLICY</Link></li>
-                </ul>
-              </div>
+                    <p className={`${Footer_.footerText} hidden-xs`}> Simplylifeinsurance.com is an independent website created to help customers find the best possible life cover quote for their circumstances. We work with FCA authorised advisers who search and compare life insurance policies from leading life insurers for the best deals available. Our service is 100% free to use and you are under no obligation to accept any of the quotes you receive.</p>
+                </div>
             </div>
-          </div>
+
         </div>
       </footer>
     )

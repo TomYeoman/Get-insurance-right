@@ -22,7 +22,8 @@ let styles = {
     "height": "auto",
     "marginBottom": "10px",
     "paddingTop" : "5px",
-    "marginBottom" : "20px"
+    "marginBottom" : "20px",
+    "borderRadius:" :"15px"
     }
 }
 

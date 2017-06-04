@@ -7,6 +7,13 @@ export default class App extends Component {
 
   componentDidMount() {
     window.addEventListener('resize', () => this.forceUpdate())
+
+    $mainMenuBar.addClass('stick');
+    $mainMenuBar.removeClass('docked-header');
+    $mainMenuBar.removeClass('pulse animated');
+    // $mainMenuBar.removeClass('undocked-header');
+    $mainMenuBarAnchor.height($mainMenuBar.height());
+
   }
   render() {
        let width = window.innerWidth;

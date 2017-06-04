@@ -1,13 +1,13 @@
 .sectionTop {
   background-color: rgb(27, 27, 27);
-  height: 100px;
+  /*height: 100px;*/
 }
 
 .sectionBottom{
   background-color: #545554;
   color: #fff;
   padding: 15px;
-  height: 100px;
+  /*height: 100px;*/
 }
 
 .footerMenu{
@@ -37,7 +37,8 @@
 @media (max-width: 768px) {
   .sectionTop {
     background-color: #34454f;
-    height: 55px;
+        padding: 15px;
+    /*height: 55px;*/
   }
   .sectionBottom{
     padding: 0px;
