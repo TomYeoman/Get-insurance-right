@@ -9,7 +9,7 @@ export default class Information extends React.Component {
   render() {
     return (
       <div className={`${styles.homeWelcomeTextContainer} text-center col-xs-12`}>
-        <h2 className={`${styles.homeWelcomeh2}`} >Save money on your life insurance, simple</h2>
+        <h2 className={`${styles.homeWelcomeh2}`} >Save money on your life insurance, simple.</h2>
 
         <div className={`col-xs-12`}>
           <div className={`col-xs-2 col-xs-offset-5`}>

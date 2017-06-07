@@ -3,18 +3,20 @@
 }
 .tileImage {
   height:100px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 .tileHeader{
-  height:50px;
+  height: 30px;
   color: #fff;
-  margin-top: 10px!important;
-    margin-bottom: 10px!important;
+  margin-top: 20px!important;
 }
 .tileButton{
   margin-top:10px;
   height:30px;
-  margin-bottom:15px;
+    margin-bottom: 30px;
 }
+
 .tileHeader{
   color: "#fff";
 }
@@ -38,6 +40,7 @@
   .tileImage {
     height:75px;
     width:auto;
+    padding-top: 15px;
   }
 
 }

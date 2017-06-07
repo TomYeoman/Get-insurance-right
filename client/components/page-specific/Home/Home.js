@@ -44,7 +44,7 @@ export default class Home extends React.Component {
             <HomeJumbotron/>
             <Information/>
             <HomeTiles />
-            <div className="col-xs-12 col-sm-8 col-sm-offset-2">
+            <div className="col-xs-12 col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2">
               <CompanyLogosLarge />
             </div>
           </div>
@@ -56,6 +56,7 @@ export default class Home extends React.Component {
         <div className="row-no-padding">
           <div className={`col-xs-12`}>
             <HomeJumbotron/>
+            <Information/>
             <HomeTiles />
             <CompanyLogosLarge />
           </div>

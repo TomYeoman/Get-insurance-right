@@ -26,7 +26,7 @@ body{
     vertical-align: middle;
     width: 40px!important;
     padding-right: 5px;
-    background-color: #34454f;
+    background-color: rgb(27, 27, 27);
 }
 
 .Select-arrow {
@@ -232,6 +232,7 @@ margin-top: 30px;
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
+        margin-top: 26px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -296,7 +297,7 @@ margin-top: 30px;
 }
 .footerMenuTop .fa{
   color: #fff!important;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .footerMenuTop{

@@ -1,8 +1,9 @@
 
 .jumboContainer {
-  background : transparent;
-  height:500px;
-  position: relative;
+    background: transparent;
+    height: 425px;
+    position: relative;
+    padding-top:55px;
 }
 
 .jumboHeader {
@@ -14,8 +15,9 @@
 
 .subHeading{
   /*font-size: 1em!important;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+margin-bottom: 0px;
+  /*margin-bottom: 20px;*/
 }
 
 .phoneNumber {
