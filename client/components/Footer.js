@@ -46,12 +46,12 @@ export default class Footer extends React.Component {
                             <li><Link to="/ComplaintsPolicy" href="#">COMPLAINTS POLICY</Link></li>
                         </ul>
                     </div>
-                    <div className="hidden-xs container text-center">
-                        <p>QuoteLifeCover.com is a trading name of British Life Ltd, a company registered in England no. 05559125.</p>
-                        <p>Registered Office Address: 1 Paper Mews, 330 High Street, Dorking, Surrey, United Kingdom, RH4 2TU</p>
+                    <div className={`${Footer_.companyInfo} hidden-xs container text-center`}>
+                        <p>QuoteLifeCover.com is a trading name of British Life Ltd, a company registered in England no. 05559125.
+                        Registered Office Address: 1 Paper Mews, 330 High Street, Dorking, Surrey, United Kingdom, RH4 2TU</p>
                     </div>
 
-                    <p className={`${Footer_.footerText} hidden-xs`}> Simplylifeinsurance.com is an independent website created to help customers find the best possible life cover quote for their circumstances. We work with FCA authorised advisers who search and compare life insurance policies from leading life insurers for the best deals available. Our service is 100% free to use and you are under no obligation to accept any of the quotes you receive.</p>
+                    <p className={`${Footer_.disclaimer} text-center`}> Simplylifeinsurance.com is an independent website created to help customers find the best possible life cover quote for their circumstances. We work with FCA authorised advisers who search and compare life insurance policies from leading life insurers for the best deals available. Our service is 100% free to use and you are under no obligation to accept any of the quotes you receive.</p>
                 </div>
             </div>
 
