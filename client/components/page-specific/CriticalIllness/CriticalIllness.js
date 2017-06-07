@@ -27,12 +27,12 @@ export default class Home extends React.Component {
   render () {
     return (
       <div className={`row-no-padding`}>
-        <div className="col-xs-12">
-          <div className={`${Products.lifeInsuranceContainer} ${Shadow.containerShadow} container main-container`}>
+        <div className="page-body-container col-xs-12">
+          <div className={`${Products.panelContentContainer} ${Shadow.containerShadow} container main-container`}>
 
             {/* Title */}
 
-            <h3 className={`${Products.pageTitle} col-xs-12`}>Critical Illness</h3>
+            <h3 className={`${Products.panelTitle} col-xs-12`}>Critical Illness</h3>
             <div className="col-xs-12">
               <div className="col-xs-12">
                 <hr className={`${elementProducts.hr}`} />
@@ -41,7 +41,7 @@ export default class Home extends React.Component {
 
             {/* Product description container */}
 
-            <div className={`${Products.productContainer} col-xs-12`}>
+            <div className={`${Products.panelTextContainer} col-xs-12`}>
 
               {/* Section 1 */}
               <div className="col-xs-12 col-sm-7">

@@ -4,7 +4,7 @@
   font-weight: bold;
 }
 
-.lifeInsuranceContainer{
+.panelContentContainer{
   margin-top: 30px;
   margin-bottom: 45px;
   background:#e8eef3;
@@ -13,18 +13,18 @@
 }
 
 .sectionHeader{
-  /*padding-top:20px;*/
-  padding-bottom:20px;
+  padding-top:15px;
+  padding-bottom:15px;
   font-size: 1.5em;
   font-weight: bold;
-      color: #34454f;
+color: #34454f;
 }
 
 .sectionText{
   padding-left: 30px;
 }
 
-.pageTitle{
+.panelTitle{
   margin-top: 40px;
   font-weight: bold;
   font-size: 2em;
@@ -32,19 +32,23 @@
   padding-left: 65px;
 }
 
-.productContainer{
+.panelTextContainer{
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
 }
 
 @media (max-width: 768px) {
-  .productContainer {
+  .panelTextContainer {
     margin: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
   }
+  .panelContentContainer{
+    margin: 15px;
+  }
+
   .sectionText{
     padding-left: 0px;
   }

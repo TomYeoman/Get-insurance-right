@@ -40,7 +40,7 @@ export default class Home extends React.Component {
     if (width > 768) {
       return (
         <div className="row-no-padding">
-          <div className={`col-xs-12`}>
+          <div className={``}>
             <HomeJumbotron/>
             <Information/>
             <HomeTiles />

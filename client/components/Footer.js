@@ -46,7 +46,7 @@ export default class Footer extends React.Component {
                             <li><Link to="/ComplaintsPolicy" href="#">COMPLAINTS POLICY</Link></li>
                         </ul>
                     </div>
-                    <div className="container text-center">
+                    <div className="hidden-xs container text-center">
                         <p>QuoteLifeCover.com is a trading name of British Life Ltd, a company registered in England no. 05559125.</p>
                         <p>Registered Office Address: 1 Paper Mews, 330 High Street, Dorking, Surrey, United Kingdom, RH4 2TU</p>
                     </div>
