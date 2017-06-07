@@ -67,7 +67,7 @@ export default class Home extends React.Component {
 
               <div className={`${Products.contactContainer} col-xs-12 col-sm-offset-1 col-sm-3`}>
 
-                <Link to="/quote" className={`${Products.getQuoteButton} btn btn-primary text-center form-control`}  href="#">GET A QUOTE</Link>
+                <Link to="/quote" className={`${Products.getQuoteButton} btn btn-primary text-center form-control`}  href="#">GET A QUOTE NOW</Link>
 
                 <input type="button" className={`${Products.getFreeAdviceButton} btn btn-primary text-center form-control`} value="GET FREE ADVICE"/>
 

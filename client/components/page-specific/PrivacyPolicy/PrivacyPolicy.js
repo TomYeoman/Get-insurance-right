@@ -25,19 +25,19 @@ export default class Home extends React.Component {
 
   render () {
     return (
-      <div className={`productPageContainer col-xs-12`}>
-        <div className={`${Products.lifeInsuranceContainer} ${Shadow.containerShadow} container product-container`}>
+      <div className={`page-body-container col-xs-12`}>
+        <div className={`${Products.panelContentContainer} ${Shadow.containerShadow} container product-container`}>
 
           {/* Title */}
 
-          <h3 className={`${Products.pageTitle} col-xs-12`}>Privacy Policy</h3>
+          <h3 className={`${Products.panelTitle} col-xs-12`}>Privacy Policy</h3>
           <div className="col-xs-12">
             <div className="col-xs-12">
               <hr className={`${elementProducts.hr}`} />
             </div>
           </div>
 
-          <div className={`${Products.productContainer} col-xs-12`}>
+          <div className={`${Products.panelTextContainer} col-xs-12`}>
 
             {/* Overview */}
 
