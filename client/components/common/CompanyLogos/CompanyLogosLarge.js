@@ -9,7 +9,7 @@ export default class Companies extends React.Component {
 
   render() {
     return (
-      <div className={`${styles.homeWelcomeTextContainer} text-center col-xs-12`}>
+      <div className={`${styles.homeWelcomeTextContainer} row-no-padding text-center col-xs-12`}>
 
 
 

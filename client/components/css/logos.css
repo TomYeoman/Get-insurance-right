@@ -13,11 +13,29 @@
 }
 
 .logoLarge {
-  composes: iconLayout;
-  height: 75px;
-  padding: 5px;
-  margin-bottom: 15px;
-  max-height: 100%;
-  max-width: 100%;
-      width: auto;
+    width:100px;
+    height:100px;
+    padding:5px;
+}
+
+
+@media (max-width: 1200px) {
+
+    .logoLarge {
+        width:75px;
+        height:75px;
+        padding:5px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .logoLarge {
+        width:60px;
+        height:60px;
+        padding:5px;
+    }
+
 }

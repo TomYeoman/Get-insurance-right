@@ -3,6 +3,8 @@ import elementProducts from '../../css/elements.css'
 import Shadow from '../../css/shadow.css'
 import Logos from '../../css/logos.css'
 import CompanyLogosLarge from '../../common/CompanyLogos/CompanyLogosLarge.js'
+import AdviceSection from '../../common/AdviceSection'
+
 import Products from '../../css/products.css'
 // React
 import React from 'react'
@@ -21,6 +23,9 @@ export default class Home extends React.Component {
     }
 
     document.getElementById("ProductsMenuItem").classList.add("active");
+
+    // Scroll to top of page when navigating to this
+    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {});
   }
 
   render () {
@@ -46,25 +51,16 @@ export default class Home extends React.Component {
               <div className="col-xs-12 col-sm-7">
                 <h4 className={`${Products.sectionHeader}`} >What is Life Insurance{'?'}</h4>
                 <div className={`${Products.sectionText}`}>
-                <p>A Life Insurance policy provides a lump sum of money for family members in the event of the policyholder's death during the term of the policy. It is primarily designed to help protect immediate family members and possibly other dependents from financial hardship by providing the means to pay off the mortgage on the family home and/or by providing income to the surviving spouse to maintain their standard of living.</p>                  <p>Most Life &amp; Critical Illness Cover policies cover a fixed term, often linked to the duration of a mortgage, and therefore Life Insurance can also be known as <strong>Term Life Insurance, Mortgage Protection, Mortgage Life Insurance </strong>and<strong> Term Assurance.</strong></p>
+                <p>A Life Insurance policy provides a lump sum of money for family members in the event of the policyholder{`'`}s death during the term of the policy. It is primarily designed to help protect immediate family members and possibly other dependents from financial hardship by providing the means to pay off the mortgage on the family home and/or by providing income to the surviving spouse to maintain their standard of living.</p>                  <p>Most Life &amp; Critical Illness Cover policies cover a fixed term, often linked to the duration of a mortgage, and therefore Life Insurance can also be known as <strong>Term Life Insurance, Mortgage Protection, Mortgage Life Insurance </strong>and<strong> Term Assurance.</strong></p>
                 <p>Most life insurance policies cover a fixed term, often linked to the duration of a mortgage, and therefore Life Insurance can also be known as <strong>Term Life Insurance, Mortgage Protection, Mortgage Life Insurance </strong>and<strong> Term Assurance.</strong></p>
                 </div>
               </div>
 
               {/* Side Contact information */}
 
-              <div className={`${Products.contactContainer} col-xs-12 col-sm-offset-1 col-sm-3`}>
-
-                <Link to="/quote" className={`${Products.getQuoteButton} btn btn-primary text-center form-control`}  href="#">GET A QUOTE</Link>
-
-                <input type="button" className={`${Products.getFreeAdviceButton} btn btn-primary text-center form-control`} value="GET FREE ADVICE"/>
-
-                <p>Or call an Independent UK adviser* on</p>
-                <p className={`${Products.contactPhoneNumber}`} >0330 100 7110</p>
-                <p>or</p>
-                <p className={`${Products.contactPhoneNumber}`} >0800 316 6917*</p>
-
-              </div>
+            <div className="hidden-xs col-sm-offset-1 col-sm-3">
+              <AdviceSection />
+            </div>
 
               {/* Section 2 */}
               <div className="col-xs-12 col-sm-11">
@@ -95,7 +91,12 @@ export default class Home extends React.Component {
               </div>
             </div> {/* productContainer */}
 
-            <CompanyLogosLarge/>
+            <div className="hidden-md hidden-lg col-xs-12">
+              <AdviceSection />
+            </div>
+
+            <CompanyLogosLarge />
+
 
           </div> {/* pagecontainer */}
         </div> {/* col-xs-12 */}

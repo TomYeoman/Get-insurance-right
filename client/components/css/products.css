@@ -33,12 +33,21 @@ color: #34454f;
 }
 
 .panelTextContainer{
-  padding-top: 50px;
+  /*padding-top: 15px;*/
   padding-bottom: 50px;
   padding-left: 50px;
 }
 
 @media (max-width: 768px) {
+
+    .panelTitle{
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 2em;
+      padding-left: 15px;
+      text-align: center;
+    }
+
   .panelTextContainer {
     margin: 10px;
     padding-top: 0px;
@@ -47,6 +56,7 @@ color: #34454f;
   }
   .panelContentContainer{
     margin: 15px;
+    padding: 5px;
   }
 
   .sectionText{
@@ -60,32 +70,4 @@ color: #34454f;
   }
 
 
-}
-
-/* Right Side contact info (Contact Information & Buttons) */
-
-.contactContainer{
-  -webkit-box-shadow: 11px 0px 65px -9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 11px 0px 65px -9px rgba(0,0,0,0.75);
-  box-shadow: 11px 0px 65px -9px rgba(0,0,0,0.75);
-  padding: 15px;
-  text-align:center;
-  font-weight: bold;
-  border-radius: 20px;
-  margin-top: 15px;
-}
-
-.getQuoteButton{
-
-    margin-bottom: 15px;
-}
-.getFreeAdviceButton{
-    background: #34454f!important;
-    border-color:  #34454f!important;
-    margin-bottom: 15px;
-}
-
-.contactPhoneNumber{
-  color: RGB(131,169,192);
-  font-weight: bold;
 }

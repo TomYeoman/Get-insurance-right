@@ -29,7 +29,7 @@ export default class Footer extends React.Component {
                      <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/Home" href="#">HOME</Link></li>
                      <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/LifeInsurance" href="#">LIFE INSURANCE</Link></li>
                      <li className={`${Footer_.borderRight} col-xs-3 col-sm-3`}><Link to="/About" href="#">WHY CHOOSE SIMPLY</Link></li>
-                     <li className={`col-xs-3 col-sm-3`}><Link to="/Contact" href="#">CONTACT</Link></li>
+                     <li className={`col-xs-3 col-sm-3`}><Link to="/ContactUs" href="#">CONTACT</Link></li>
                    </ul>
                 </div>
 
@@ -46,13 +46,27 @@ export default class Footer extends React.Component {
                             <li><Link to="/ComplaintsPolicy" href="#">COMPLAINTS POLICY</Link></li>
                         </ul>
                     </div>
-                    <div className={`${Footer_.companyInfo} hidden-xs container text-center`}>
-                        <p>QuoteLifeCover.com is a trading name of British Life Ltd, a company registered in England no. 05559125.
-                        Registered Office Address: 1 Paper Mews, 330 High Street, Dorking, Surrey, United Kingdom, RH4 2TU</p>
+
+                    <div className="col-xs-12">
+                        <div className={`${Footer_.companyInfo} hidden-xs text-center col-xs-12 col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2`}>
+                            <p>QuoteLifeCover.com is a trading name of British Life Ltd, a company registered in England no. 05559125.
+                            Registered Office Address: 1 Paper Mews, 330 High Street, Dorking, Surrey, United Kingdom, RH4 2TU</p>
+                        </div>
                     </div>
 
-                    <p className={`${Footer_.disclaimer} text-center`}> Simplylifeinsurance.com is an independent website created to help customers find the best possible life cover quote for their circumstances. We work with FCA authorised advisers who search and compare life insurance policies from leading life insurers for the best deals available. Our service is 100% free to use and you are under no obligation to accept any of the quotes you receive.</p>
+
+                    <div className="col-xs-12">
+                        <div className={`${Footer_.companyInfo} text-center col-xs-12 col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2`}>
+                            <p>Simplylifeinsurance.com is an independent website created to help customers find the best possible life cover quote for their circumstances. We work with FCA authorised advisers who search and compare life insurance policies from leading life insurers for the best deals available. Our service is 100% free to use and you are under no obligation to accept any of the quotes you receive.</p>
+                        </div>
+                    </div>
+
+
+                    <span>&nbsp;</span>
+
+
                 </div>
+
             </div>
 
         </div>

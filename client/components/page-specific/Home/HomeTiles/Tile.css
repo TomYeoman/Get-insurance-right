@@ -22,7 +22,13 @@
 }
 
 
+
 @media (max-width: 768px) {
+
+    .tileHeader{
+        font-size:16px;
+    }
+
   .tileContainer {
     height:150px;
   }

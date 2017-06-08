@@ -22,7 +22,7 @@ export default () => {
                     <ul className="dropdown-menu">
                         <li><Link to="/LifeInsurance" href="#">LIFE INSURANCE</Link></li>
                         <li><Link to="/CriticalIllness" href="#">CRITICAL ILLNESS</Link></li>
-                        <li><Link to="/IncomeProtection" href="#">INCOME PROTECTIOn</Link></li>
+                        <li><Link to="/IncomeProtection" href="#">INCOME PROTECTION</Link></li>
                         <li><Link to="/Over50s" href="#">OVER 50'S INSURANCE</Link></li>
                     </ul>
                 </li>

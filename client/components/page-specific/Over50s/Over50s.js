@@ -2,7 +2,9 @@
 import elementProducts from '../../css/elements.css'
 import Shadow from '../../css/shadow.css'
 import Logos from '../../css/logos.css'
-import CompanyLogosSmall from '../../common/CompanyLogos/CompanyLogosSmall'
+import CompanyLogosLarge from '../../common/CompanyLogos/CompanyLogosLarge.js'
+import AdviceSection from '../../common/AdviceSection'
+
 import Products from '../../css/products.css'
 // React
 import React from 'react'
@@ -21,6 +23,7 @@ export default class Home extends React.Component {
     }
 
     document.getElementById("ProductsMenuItem").classList.add("active");
+    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {});
   }
 
   render () {
@@ -53,17 +56,8 @@ export default class Home extends React.Component {
 
               {/* Side Contact information */}
 
-              <div className={`${Products.contactContainer} col-xs-12 col-sm-offset-1 col-sm-3`}>
-
-                <Link to="/quote" className={`${Products.getQuoteButton} btn btn-primary text-center form-control`}  href="#">GET A QUOTE</Link>
-
-                <input type="button" className={`${Products.getFreeAdviceButton} btn btn-primary text-center form-control`} value="GET FREE ADVICE"/>
-
-                <p>Or call an Independent UK adviser* on</p>
-                <p className={`${Products.contactPhoneNumber}`} >0330 100 7110</p>
-                <p>or</p>
-                <p className={`${Products.contactPhoneNumber}`} >0800 316 6917*</p>
-
+              <div className="hidden-xs col-sm-offset-1 col-sm-3">
+                <AdviceSection />
               </div>
 
               {/* Section 2 */}
@@ -94,12 +88,17 @@ export default class Home extends React.Component {
                 </div>
               </div>
 
-              <CompanyLogosSmall />
 
-            </div> /* productContainer */
-          </div> /* pagecontainer */
-        </div> /* col-xs-12 */
-      </div> /* row no padding */
+                <div className="hidden-md hidden-lg col-xs-12">
+                  <AdviceSection />
+                </div>
+
+                <CompanyLogosLarge />
+
+            </div> {/* productContainer */}
+          </div> {/* pagecontainer */}
+        </div> {/* col-xs-12 */}
+      </div>
     )
   }
 }

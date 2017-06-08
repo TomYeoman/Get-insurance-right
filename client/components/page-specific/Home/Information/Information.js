@@ -20,11 +20,10 @@ export default class Information extends React.Component {
         <br/>
         <br/>
 
-        <h3>We help 100’s of people obtain competitive quotes from the UK’s leading insurers</h3>
+        <h3 className={`${styles.textSmall}`}>We help 100’s of people obtain competitive quotes from the UK’s leading insurers</h3>
         <br/>
 
-        <h4>Life Insurance, Critical Illness, Over 50's Insurance, Income Protection, Buildings and</h4>
-        <h4>Content, Landlord Insurance.</h4>
+        <h4 className={`${styles.textSmall}`}>Life Insurance, Critical Illness, Over 50{`'`}s Insurance, Income Protection, Buildings and Content, Landlord Insurance.</h4>
         <br/>
 
       </div>

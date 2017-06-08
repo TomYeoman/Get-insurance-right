@@ -30,6 +30,8 @@ export default class Home extends React.Component {
     document.getElementById("HomeMenuItem").classList.add("active");
 
     window.addEventListener('resize', () => this.forceUpdate())
+    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {});
+
 
   }
 

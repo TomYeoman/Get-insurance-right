@@ -22,10 +22,10 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className={`${styles.jumboContainer} jumbotron container`}>
+      <div className={`${styles.jumboContainer} jumbotron col-xs-12 col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2`}>
 
         <div className={`text-center`}>
-          <div className={`${styles.textContainer}`}>
+          <div className={`${styles.textContainer} col-xs-12`}>
             <h1 className={`${styles.jumboHeader}`}>a fresh new approach to life insurance</h1>
             <h4 className={`${styles.subHeading}`}>talk to one of our experts on</h4>
             <span className={`${styles.phoneNumber}`}>07657 155 263</span> <h3 className={`${styles.phoneNumberMiddle}`}> / </h3> <span className={`${styles.phoneNumber}`}>01908 411 142</span>
@@ -40,14 +40,16 @@ export default class App extends React.Component {
             />
           </div>
         </div>
+        <div className="row-no-padding">
+            <div className={`${styles.jumboIcons} hidden-xs col-xs-12`}>
 
-        <div className={`${styles.jumboIcons} hidden-xs col-xs-12`}>
+              <i className={`${styles.jumboLogo} fa fa-facebook-official`} aria-hidden="true"></i>
+              <i className={`${styles.jumboLogo} fa fa-twitter-square`} aria-hidden="true"></i>
+              <i className={`${styles.jumboLogo} fa fa-linkedin-square`} aria-hidden="true"></i>
 
-          <i className={`${styles.jumboLogo} fa fa-facebook-official`} aria-hidden="true"></i>
-          <i className={`${styles.jumboLogo} fa fa-twitter-square`} aria-hidden="true"></i>
-          <i className={`${styles.jumboLogo} fa fa-linkedin-square`} aria-hidden="true"></i>
-
+            </div>
         </div>
+
 
       </div>
     )

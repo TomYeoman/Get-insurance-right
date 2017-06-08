@@ -21,6 +21,8 @@ export default class Home extends React.Component {
     }
 
     document.getElementById("ContactMenuItem").classList.add("active");
+    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {});
+
   }
 
   render () {
