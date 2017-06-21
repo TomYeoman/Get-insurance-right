@@ -17,8 +17,6 @@ export default class App extends React.Component {
       <div className={`${styles.coverTileContainer} ptop col-xs-12`}>
         <div className="row-no-padding">
           <div className="col-xs-12 col-sm-8 col-sm-offset-2">
-
-
             <div className="clearfix col-xs-6 col-sm-6 col-md-4">
               <ShadowContainer>
                 <Tile

@@ -4,7 +4,7 @@ import React from 'react'
 class ShadowContainer extends React.Component {
   render () {
     return (
-      <div style={styles.container} className={`${_shadowContainer.tileContainer} clearfix header-small`}>
+      <div style={styles.container} className={`clearfix header-small`}>
   			{this.props.children}
   		</div>
     )

@@ -62,9 +62,10 @@ body{
   background-color: transparent;
   color: #000;
   font-weight:bold;
-  letter-spacing: 0.8px;
-
+  letter-spacing: 0.5px;
 }
+
+
 
 .navbar .navbar-default {
   border: 0px transparent;
@@ -405,6 +406,10 @@ margin-top: 30px;
 }
 
 
+.bold{
+    font-weight:bold
+}
+
 
 
 /* Put me into components, Used for styling on product page containers */
@@ -435,4 +440,5 @@ margin-top: 30px;
     left: 0;
     width: 100% !important;
     height: 100% !important;
+    border:0;
 }

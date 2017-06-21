@@ -6,8 +6,10 @@ const quoteForm = require('./QuoteForm.css')
 }
 
 .bubbleContainer{
-  padding-top:50px;
-  padding:40px;
+  /*padding-top:50px;
+  padding:40px;*/
+      margin-top: 40px;
+      margin-bottom: 40px;
   /*composes: TahitiGold from "../css/colours.css";*/
   /*background-color: rgb(38, 153, 38);
   background-color: rgba(38, 153, 38, 0.7);*/
@@ -110,10 +112,10 @@ left: 51px;
 
 @media (max-width: 768px) {
   .bubbleContainer{
-    padding-top:0px;
-    padding:0px;
+    /*padding-top:0px;
+    padding:0px;*/
+    margin-bottom: 50px;
     margin-top: 25px;
-margin-bottom: 25px;
     /*composes: TahitiGold from "../css/colours.css";*/
   }
 

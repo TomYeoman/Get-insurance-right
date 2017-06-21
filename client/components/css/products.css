@@ -8,7 +8,6 @@
   margin-top: 30px;
   margin-bottom: 45px;
   background:#e8eef3;
-  padding:15px;
     border-radius: 20px;
 }
 
@@ -26,7 +25,7 @@ color: #34454f;
 
 .panelTitle{
   margin-top: 40px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 2em;
   color: #34454f;
   padding-left: 65px;
@@ -36,6 +35,12 @@ color: #34454f;
   /*padding-top: 15px;*/
   padding-bottom: 50px;
   padding-left: 50px;
+}
+
+.image{
+    width:100%;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
 }
 
 @media (max-width: 768px) {
@@ -53,10 +58,6 @@ color: #34454f;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-  }
-  .panelContentContainer{
-    margin: 15px;
-    padding: 5px;
   }
 
   .sectionText{

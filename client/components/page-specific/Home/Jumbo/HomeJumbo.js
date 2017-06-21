@@ -16,7 +16,6 @@ export default class App extends React.Component {
   }
 
   logChange(val) {
-      console.log("Selected: " + val.value)
       browserHistory.push(val.value)
   }
 
@@ -31,7 +30,7 @@ export default class App extends React.Component {
             <span className={`${styles.phoneNumber}`}>07657 155 263</span> <h3 className={`${styles.phoneNumberMiddle}`}> / </h3> <span className={`${styles.phoneNumber}`}>01908 411 142</span>
           </div>
 
-          <div className={`${styles.selectContainer} col-sm-10 col-sm-offset-1 col-xs-12`}>
+          <div className={`${styles.selectContainer} pulse animated col-sm-10 col-sm-offset-1 col-xs-12`}>
             <Select
                 name="form-field-name"
                 options={options}
@@ -40,16 +39,6 @@ export default class App extends React.Component {
             />
           </div>
         </div>
-        <div className="row-no-padding">
-            <div className={`${styles.jumboIcons} hidden-xs col-xs-12`}>
-
-              <i className={`${styles.jumboLogo} fa fa-facebook-official`} aria-hidden="true"></i>
-              <i className={`${styles.jumboLogo} fa fa-twitter-square`} aria-hidden="true"></i>
-              <i className={`${styles.jumboLogo} fa fa-linkedin-square`} aria-hidden="true"></i>
-
-            </div>
-        </div>
-
 
       </div>
     )

@@ -76,7 +76,7 @@ export default class QuoteForm extends Component {
 
             <div className={`col-xs-12 clearfix ${styles.bubbleContainer}`}>
 
-              <div className={`${styles.bubble} col-xs-12 col-sm-8 col-sm-offset-2`}>
+              <div className={`${styles.bubble} col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2`}>
 
                 <div className="col-xs-12">
                   <h1>GET A QUOTE NOW</h1>

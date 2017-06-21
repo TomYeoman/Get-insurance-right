@@ -16,7 +16,7 @@ export default class QuoteForm extends Component {
 
             <Link to="/quote" className={`${styles.getQuoteButton} btn btn-primary text-center form-control`}  href="#">GET A QUOTE</Link>
 
-            <input type="button" className={`${styles.getFreeAdviceButton} btn btn-primary text-center form-control`} value="GET FREE ADVICE"/>
+            <Link to="/quote" className={`${styles.getFreeAdviceButton} btn btn-primary text-center form-control`} href="#">GET FREE ADVICE</Link>
 
             <p>Or call an Independent UK adviser* on</p>
             <p className={`${styles.contactPhoneNumber}`} >0330 100 7110</p>

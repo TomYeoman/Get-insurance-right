@@ -25,8 +25,8 @@ export default class App extends Component {
              <div id="mainMenuBarAnchor"></div>
 
              <div className="row-no-padding">
-               <div className="sticky-header">
-                 <div className="row-no-padding col-xs-12 col-sm-12 col-lg-8 col-lg-offset-2">
+               <div className="row-no-padding sticky-header">
+                 <div className="row-no-padding col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
                    <div className="col-xs-3">
                      <SiteHeader />
                    </div>

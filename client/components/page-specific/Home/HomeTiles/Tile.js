@@ -24,7 +24,7 @@ export default class Tiles extends Component  {
     return (
   			<div>
             {/* Mobile View */}
-            <div onClick={ () => this._getQuoteClick(this.props.route)} className={`${styles.tileContainer} hidden-sm hidden-md hidden-lg`}>
+            <div onClick={ () => this._getQuoteClick(this.props.route)} className={`${styles.tileContainer} pulse animated hidden-sm hidden-md hidden-lg`}>
               <div className="col-sm-12 text-center">
                 <img className={`${styles.tileImage}`} src={this.props.imgsrc}></img>
               </div>
